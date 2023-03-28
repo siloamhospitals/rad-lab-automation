@@ -1,0 +1,437 @@
+{
+  "id": "ca0adf70-e3a8-4a0d-b0a7-4ae5bc9d8caa",
+  "version": "2.0",
+  "name": "TSTRAD-APPOINT-014-ADMISSION",
+  "url": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+  "tests": [{
+    "id": "6672bd8e-92e4-43f4-8396-e0468427d558",
+    "name": "Untitled",
+    "commands": [{
+      "id": "95a4ee28-4037-4727-844f-e19f6e468bfc",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "769aa2d5-d259-4f44-a197-fb9d0d81fc3b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0b83b4b-46ef-4034-a490-916fc0a7cb1f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(13) > span",
+      "targets": [
+        ["css=.btn:nth-child(13) > span", "css:finder"],
+        ["xpath=//label[12]/span", "xpath:position"],
+        ["xpath=//span[contains(.,' RADIOLOGY OTHERS - Ruangan for testing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c22f739-ffa6-4f49-9521-7bf0d947bd06",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ml-auto",
+      "targets": [
+        ["css=.ml-auto", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//app-table-list-daily-fcfs/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Jadwalkan Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8c4cab5-6ccf-4c39-951f-e77a93143419",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ml-auto",
+      "targets": [
+        ["css=.ml-auto", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//app-table-list-daily-fcfs/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Jadwalkan Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa3e9bce-271c-4e64-9fbb-84dc24b9bd5c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ml-auto",
+      "targets": [
+        ["css=.ml-auto", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//app-table-list-daily-fcfs/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Jadwalkan Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6b5eefd-6cc3-485e-8be8-2c5f046ace47",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,172.5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b63d06c9-f615-45a4-907d-22d6996b4faa",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.search-name-button",
+      "targets": [
+        ["css=.search-name-button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[4]", "xpath:attributes"],
+        ["xpath=//form/div/div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f66b250f-25aa-4cf5-90e1-c42b5e0b4852",
+      "comment": "",
+      "command": "click",
+      "target": "id=patient-dob-search",
+      "targets": [
+        ["id=patient-dob-search", "id"],
+        ["name=birth-date", "name"],
+        ["css=#patient-dob-search", "css:finder"],
+        ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfb1ae20-df36-47f2-8e34-cc5ba865fa6c",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-dob-search",
+      "targets": [
+        ["id=patient-dob-search", "id"],
+        ["name=birth-date", "name"],
+        ["css=#patient-dob-search", "css:finder"],
+        ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": "10-11-2001"
+    }, {
+      "id": "cd66e599-ccba-4861-ac71-4eaf6491b60c",
+      "comment": "",
+      "command": "click",
+      "target": "id=patient-name-search",
+      "targets": [
+        ["id=patient-name-search", "id"],
+        ["name=patient-name-search", "name"],
+        ["css=#patient-name-search", "css:finder"],
+        ["xpath=//input[@id='patient-name-search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5911f292-f1d9-42e9-852f-08e4cff26d53",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-name-search",
+      "targets": [
+        ["id=patient-name-search", "id"],
+        ["name=patient-name-search", "name"],
+        ["css=#patient-name-search", "css:finder"],
+        ["xpath=//input[@id='patient-name-search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Fer D Sambo"
+    }, {
+      "id": "23f53b4b-d5e3-4975-b567-6c52044d4b6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-name-button > .fa",
+      "targets": [
+        ["css=.search-name-button > .fa", "css:finder"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f11ed20f-1387-4d05-8bc7-3a4a9b6ce7d9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.search-name-button > .fa",
+      "targets": [
+        ["css=.search-name-button > .fa", "css:finder"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "faf88f97-198f-4bb3-b393-88ef5b97ae46",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.search-name-button > .fa",
+      "targets": [
+        ["css=.search-name-button > .fa", "css:finder"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69d7221c-3da0-446b-8e05-b93ce2e2b0bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-hover > td:nth-child(1)",
+      "targets": [
+        ["css=.item-hover > td:nth-child(1)", "css:finder"],
+        ["xpath=//div[5]/table/tbody/tr/td", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "508c33da-5c92-4e4e-b475-fff0d3b96b1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-add-examination",
+      "targets": [
+        ["css=.btn-add-examination", "css:finder"],
+        ["xpath=//div/div/div/div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Tambah Pemeriksaan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "17176c15-1d9e-4bbc-bf89-37bb49cfc24e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4:nth-child(1) .ml-2",
+      "targets": [
+        ["css=.col-md-4:nth-child(1) .ml-2", "css:finder"],
+        ["xpath=//section/div[2]/div/label/span", "xpath:position"],
+        ["xpath=//span[contains(.,'CD / DVD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fdd2785-088a-4893-b327-4f1c4b904bfb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success:nth-child(2)",
+      "targets": [
+        ["css=.btn-success:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[10]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Simpan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d87f6e19-c6c4-4cfc-a88d-76854f4fdadc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-check:nth-child(3) > .form-check-label",
+      "targets": [
+        ["css=.form-check:nth-child(3) > .form-check-label", "css:finder"],
+        ["xpath=//div[2]/div/div[3]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ef553b9-e73b-46fe-adf5-69977a721a59",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-submit-modality-slot",
+      "targets": [
+        ["id=btn-submit-modality-slot", "id"],
+        ["css=#btn-submit-modality-slot", "css:finder"],
+        ["xpath=//button[@id='btn-submit-modality-slot']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1ff066f-b1f8-4f8c-b00f-f4f6c1bd9017",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(8)",
+      "targets": [
+        ["css=td:nth-child(8)", "css:finder"],
+        ["xpath=//td[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a093fcc9-65a0-475d-84b7-74208b0071a8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,172.5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "387fef71-52f3-47db-8ea5-84b7012e5020",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@id='btn-create-admission'])[2]",
+      "targets": [
+        ["xpath=(//button[@id='btn-create-admission'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='modal-detail-schedule']/div[2]/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Admission Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30a1acd1-7088-46e7-871d-1d6d5882bb74",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-create-admission",
+      "targets": [
+        ["id=btn-create-admission", "id"],
+        ["css=#btn-create-admission", "css:finder"],
+        ["xpath=//button[@id='btn-create-admission']", "xpath:attributes"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buat Admission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ae8265a-8023-43c4-acf9-1cdc0160499e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-content > .modal-content .back-button",
+      "targets": [
+        ["css=.modal-content > .modal-content .back-button", "css:finder"],
+        ["xpath=//div/div/div/div/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4441bf4c-5288-44fb-aed2-cb8fc98043c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(8)",
+      "targets": [
+        ["css=td:nth-child(8)", "css:finder"],
+        ["xpath=//td[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dc2e07d-97f4-44c6-8530-d0d8288c861a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=btn-create-check-in",
+      "targets": [
+        ["id=btn-create-check-in", "id"],
+        ["css=#btn-create-check-in", "css:finder"],
+        ["xpath=//button[@id='btn-create-check-in']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-detail-schedule']/div[2]/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Check In Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e04e5605-8414-4c41-98c5-5c6e93c9b5ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-create-check-in",
+      "targets": [
+        ["id=btn-create-check-in", "id"],
+        ["css=#btn-create-check-in", "css:finder"],
+        ["xpath=//button[@id='btn-create-check-in']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-detail-schedule']/div[2]/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Check In Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53a858e4-ee71-441e-9dd9-b281a4224871",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=btn-create-check-in",
+      "targets": [
+        ["id=btn-create-check-in", "id"],
+        ["css=#btn-create-check-in", "css:finder"],
+        ["xpath=//button[@id='btn-create-check-in']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-detail-schedule']/div[2]/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Check In Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f70e9feb-f2ef-480d-adf4-c0e62dcb0e22",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Lanjutkan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c85ceb59-b39e-4a60-8c07-e020f2c2689a",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-number",
+      "targets": [
+        ["id=input-number", "id"],
+        ["css=#input-number", "css:finder"],
+        ["xpath=//input[@id='input-number']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f756bc2-bd53-4c89-9bec-f03c39cdf400",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-number",
+      "targets": [
+        ["id=input-number", "id"],
+        ["css=#input-number", "css:finder"],
+        ["xpath=//input[@id='input-number']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "BQ008"
+    }, {
+      "id": "e4639530-1a54-4e73-b8ac-5519ecc2a476",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-check-in",
+      "targets": [
+        ["id=btn-check-in", "id"],
+        ["css=#btn-check-in", "css:finder"],
+        ["xpath=//button[@id='btn-check-in']", "xpath:attributes"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Check-in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c147cbb3-e324-4945-ab39-a678a76e0986",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=btn-check-in",
+      "targets": [
+        ["id=btn-check-in", "id"],
+        ["css=#btn-check-in", "css:finder"],
+        ["xpath=//button[@id='btn-check-in']", "xpath:attributes"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Check-in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f30aa0e2-45cd-40b3-83ca-908623a0a3d6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ml-2:nth-child(1)",
+      "targets": [
+        ["css=.ml-2:nth-child(1)", "css:finder"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Cetak Tiket')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98ebe2f9-2af0-4103-b59f-65fb5d3407bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close",
+      "targets": [
+        ["css=.close", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//app-modal-queue-number/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a3cf227b-72c1-4e6d-8e7d-93370b206ff4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6672bd8e-92e4-43f4-8396-e0468427d558"]
+  }],
+  "urls": ["http://10.85.139.13/"],
+  "plugins": []
+}
