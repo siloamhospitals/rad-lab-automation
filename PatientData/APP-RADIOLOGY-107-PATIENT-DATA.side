@@ -1,38 +1,38 @@
 {
-  "id": "fa075303-4ee5-4d09-a0da-5530cd3f6056",
+  "id": "ef137b3b-c7f4-448b-9558-7ea740afe93f",
   "version": "2.0",
-  "name": "TSTRAD-APPOINT-015-ADMISSION",
+  "name": "APP-RADIOLOGY-107-PATIENT-DATA",
   "url": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
   "tests": [{
-    "id": "f6b5aabd-c028-4d80-bd4e-52f5d711ab88",
-    "name": "Create Appointment",
+    "id": "d048a561-7d1b-4611-a570-368f74eff60f",
+    "name": "Reset Patient Data From Create Admission",
     "commands": [{
-      "id": "bd4a9d77-73b6-4531-bd9a-480a4d017157",
+      "id": "108192a1-cc2e-4cb7-a032-f39bbf909095",
       "comment": "",
       "command": "open",
       "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
       "targets": [],
       "value": ""
     }, {
-      "id": "0a7bca11-85a5-4c5b-a513-4eab81d70173",
+      "id": "1169da77-e3c8-415e-82c3-ad1f3851cc40",
       "comment": "",
       "command": "setWindowSize",
       "target": "1382x784",
       "targets": [],
       "value": ""
     }, {
-      "id": "a2baa6c8-039b-46f9-9150-98347ba108b3",
+      "id": "251f540f-ee89-4392-b5ac-b1541c71b171",
       "comment": "",
       "command": "click",
-      "target": "css=.btn:nth-child(4) > span",
+      "target": "css=.btn:nth-child(13)",
       "targets": [
-        ["css=.btn:nth-child(4) > span", "css:finder"],
-        ["xpath=//label[3]/span", "xpath:position"],
-        ["xpath=//span[contains(.,' CT - Ruangan CT SCAN')]", "xpath:innerText"]
+        ["css=.btn:nth-child(13)", "css:finder"],
+        ["xpath=//label[12]", "xpath:position"],
+        ["xpath=//label[contains(.,' RADIOLOGY OTHERS - Ruangan for testing')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "51b96ca3-4ffa-47e6-8b15-ff4244c87d18",
+      "id": "e1d99663-4e9d-4a9a-9402-54800844d9bc",
       "comment": "",
       "command": "click",
       "target": "css=.ml-auto",
@@ -44,14 +44,14 @@
       ],
       "value": ""
     }, {
-      "id": "af4d0844-6825-4a6c-8198-04934ab29315",
+      "id": "f5444d11-5aa8-4d5a-9a58-4e0dcd1aae86",
       "comment": "",
       "command": "runScript",
       "target": "window.scrollTo(0,172.5)",
       "targets": [],
       "value": ""
     }, {
-      "id": "1616e1a7-c3f5-4c84-b860-7e426b294fa9",
+      "id": "3d255867-8701-4bb2-9e8b-5baffe51c749",
       "comment": "",
       "command": "click",
       "target": "id=patient-dob-search",
@@ -64,21 +64,20 @@
       ],
       "value": ""
     }, {
-      "id": "14784e06-2995-4fdc-b8d2-11fbb10ff0a2",
+      "id": "9adbaed5-bd84-4744-aadf-ce0198a4b9f5",
       "comment": "",
       "command": "type",
       "target": "id=patient-dob-search",
-      "targets": [],
-      "value": "19-01-2000"
-    }, {
-      "id": "33b0b375-4341-4fda-8c94-26d0e5ce3a68",
-      "comment": "",
-      "command": "//type",
-      "target": "id=patient-dob-search",
-      "targets": [],
+      "targets": [
+        ["id=patient-dob-search", "id"],
+        ["name=birth-date", "name"],
+        ["css=#patient-dob-search", "css:finder"],
+        ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
       "value": "10-11-2001"
     }, {
-      "id": "6285ef85-5103-4dfa-84ca-81a29b52c706",
+      "id": "e572ddc7-1464-4fae-919c-9c020a26546a",
       "comment": "",
       "command": "click",
       "target": "id=patient-name-search",
@@ -91,31 +90,31 @@
       ],
       "value": ""
     }, {
-      "id": "de17bebe-5267-4de7-9035-851b15625bc5",
+      "id": "90e9bd27-f7b2-4998-83dd-0d6230386713",
       "comment": "",
       "command": "type",
       "target": "id=patient-name-search",
-      "targets": [],
-      "value": "paul test"
-    }, {
-      "id": "2685bbd4-5b41-4d81-b716-425cc593745f",
-      "comment": "",
-      "command": "//type",
-      "target": "id=patient-name-search",
-      "targets": [],
+      "targets": [
+        ["id=patient-name-search", "id"],
+        ["name=patient-name-search", "name"],
+        ["css=#patient-name-search", "css:finder"],
+        ["xpath=//input[@id='patient-name-search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
       "value": "Fer D Sambo"
     }, {
-      "id": "7a63c58b-0db0-4774-8a66-fa06b4259e6f",
+      "id": "e5e4c228-a747-4206-8da0-481ed962484f",
       "comment": "",
       "command": "click",
-      "target": "css=.search-name-button > .fa",
+      "target": "css=.search-name-button",
       "targets": [
-        ["css=.search-name-button > .fa", "css:finder"],
-        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
+        ["css=.search-name-button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[4]", "xpath:attributes"],
+        ["xpath=//form/div/div[2]/div/div/button", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "3de4cf0f-1413-4755-af11-86ff5b208c0f",
+      "id": "51f78e2f-6642-48cd-acfc-855a61f5ed54",
       "comment": "",
       "command": "click",
       "target": "id=radio2",
@@ -128,7 +127,7 @@
       ],
       "value": ""
     }, {
-      "id": "bafb7ea5-108e-4373-ba72-f0542280a72c",
+      "id": "c82b8e5e-57be-427c-b644-6d0716c799a0",
       "comment": "",
       "command": "click",
       "target": "css=.btn-add-examination",
@@ -139,18 +138,18 @@
       ],
       "value": ""
     }, {
-      "id": "3ab81701-bece-42c9-926d-5f7c19875a96",
+      "id": "64d1f316-9995-4b82-b600-1ebb410a97c4",
       "comment": "",
       "command": "click",
-      "target": "css=div:nth-child(2) > .pt-3 .col-md-4:nth-child(1) .ml-2",
+      "target": "css=.col-md-4:nth-child(1) .ml-2",
       "targets": [
-        ["css=div:nth-child(2) > .pt-3 .col-md-4:nth-child(1) .ml-2", "css:finder"],
+        ["css=.col-md-4:nth-child(1) .ml-2", "css:finder"],
         ["xpath=//section/div[2]/div/label/span", "xpath:position"],
-        ["xpath=//span[contains(.,'CT HEAD CONTRAST GK CONTINUE')]", "xpath:innerText"]
+        ["xpath=//span[contains(.,'CD / DVD')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "38e88ed1-2947-4bde-b162-f03e4e1afd91",
+      "id": "1d39a4bc-d29d-43f3-bcc1-6e0c79edcb45",
       "comment": "",
       "command": "click",
       "target": "css=.btn-success:nth-child(2)",
@@ -162,7 +161,7 @@
       ],
       "value": ""
     }, {
-      "id": "fee095dc-3125-4508-829b-1b0f87f48167",
+      "id": "2aa1f6d0-b5a2-4cc7-8e6b-b8caf7264338",
       "comment": "",
       "command": "click",
       "target": "id=bpjsRadio2",
@@ -174,25 +173,30 @@
       ],
       "value": ""
     }, {
-      "id": "6ac0a3ad-327f-4129-bc43-884ab8d1dcea",
+      "id": "32fc6889-d1e8-4b3c-b73e-5000d3e6b638",
       "comment": "",
       "command": "click",
       "target": "id=btn-submit-modality-slot",
-      "targets": [],
+      "targets": [
+        ["id=btn-submit-modality-slot", "id"],
+        ["css=#btn-submit-modality-slot", "css:finder"],
+        ["xpath=//button[@id='btn-submit-modality-slot']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div[2]/button", "xpath:position"]
+      ],
       "value": ""
     }, {
-      "id": "d0fc0213-1210-4291-93d9-d1db47971d94",
+      "id": "4f0513fa-df67-4c73-89c3-b902a205aabd",
       "comment": "",
       "command": "click",
       "target": "css=.cursor-pointer:nth-child(1) > td:nth-child(6)",
       "targets": [
         ["css=.cursor-pointer:nth-child(1) > td:nth-child(6)", "css:finder"],
         ["xpath=//app-table-list-daily-fcfs/table/tbody/tr/td[6]", "xpath:position"],
-        ["xpath=//td[contains(.,'CT HEAD CONTRAST GK CONTINUE')]", "xpath:innerText"]
+        ["xpath=//td[contains(.,'CD / DVD')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "b03cc5e9-2205-4129-81ac-133dc05b1f1a",
+      "id": "63229664-4223-4bfe-816d-a32cfca6be60",
       "comment": "",
       "command": "click",
       "target": "xpath=(//button[@id='btn-create-admission'])[2]",
@@ -204,35 +208,65 @@
       ],
       "value": ""
     }, {
-      "id": "cdb29f3f-2e3e-45c9-83ca-68d642613e96",
+      "id": "490f31c7-4f9a-40a5-bdfb-5110c22f80ec",
       "comment": "",
       "command": "click",
-      "target": "id=btn-create-admission",
+      "target": "css=.custom-color",
       "targets": [
-        ["id=btn-create-admission", "id"],
-        ["css=#btn-create-admission", "css:finder"],
-        ["xpath=//button[@id='btn-create-admission']", "xpath:attributes"],
-        ["xpath=//div[4]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Buat Admission')]", "xpath:innerText"]
+        ["css=.custom-color", "css:finder"],
+        ["xpath=//section/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Ubah Data Pasien')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "fe5bfa77-f4ea-4535-be23-0b2edbeee59f",
+      "id": "9ca039a1-98fe-4453-a312-dbdcb889cb28",
       "comment": "",
-      "command": "//click",
-      "target": "css=.modal-content > .modal-content .back-button",
-      "targets": [],
+      "command": "click",
+      "target": "id=patientName",
+      "targets": [
+        ["id=patientName", "id"],
+        ["name=patientName", "name"],
+        ["css=#patientName", "css:finder"],
+        ["xpath=//input[@id='patientName']", "xpath:attributes"],
+        ["xpath=//section[@id='information']/div[2]/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "981b025c-794c-4701-973d-e32b3b6fdc9e",
+      "comment": "",
+      "command": "type",
+      "target": "id=patientName",
+      "targets": [
+        ["id=patientName", "id"],
+        ["name=patientName", "name"],
+        ["css=#patientName", "css:finder"],
+        ["xpath=//input[@id='patientName']", "xpath:attributes"],
+        ["xpath=//section[@id='information']/div[2]/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Fer D Sambo 2"
+    }, {
+      "id": "e84698ee-3338-4ca1-9534-0ddd9b040fb1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-reset",
+      "targets": [
+        ["css=.btn-reset", "css:finder"],
+        ["xpath=//app-widget-patient-data/div/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Atur Ulang')]", "xpath:innerText"]
+      ],
       "value": ""
     }]
   }],
   "suites": [{
-    "id": "9a2ed6a4-d4a2-4c3f-bb00-6d42b64c0165",
+    "id": "6aea116f-869b-42f6-bb98-072f3f998466",
     "name": "Default Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["f6b5aabd-c028-4d80-bd4e-52f5d711ab88"]
+    "tests": ["d048a561-7d1b-4611-a570-368f74eff60f"]
   }],
-  "urls": ["http://10.85.139.13/", "http://10.85.139.13/staging-msm-fe-radiology/schedule"],
+  "urls": ["http://10.85.139.13/staging-msm-fe-radiology/schedule"],
   "plugins": []
 }

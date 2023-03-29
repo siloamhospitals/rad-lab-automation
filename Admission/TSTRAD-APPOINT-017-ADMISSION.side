@@ -1,38 +1,38 @@
 {
   "id": "ca0adf70-e3a8-4a0d-b0a7-4ae5bc9d8caa",
   "version": "2.0",
-  "name": "TSTRAD-APPOINT-014-ADMISSION",
+  "name": "TSTRAD-APPOINT-017-ADMISSION",
   "url": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
   "tests": [{
     "id": "6672bd8e-92e4-43f4-8396-e0468427d558",
-    "name": "Untitled",
+    "name": "Appointment Create",
     "commands": [{
-      "id": "95a4ee28-4037-4727-844f-e19f6e468bfc",
+      "id": "1cae09c2-2b79-487f-8938-5dee8159407a",
       "comment": "",
       "command": "open",
       "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
       "targets": [],
       "value": ""
     }, {
-      "id": "769aa2d5-d259-4f44-a197-fb9d0d81fc3b",
+      "id": "2c7eaa81-a4f1-46ee-854e-dff2cf4fa126",
       "comment": "",
       "command": "setWindowSize",
       "target": "1382x784",
       "targets": [],
       "value": ""
     }, {
-      "id": "f0b83b4b-46ef-4034-a490-916fc0a7cb1f",
+      "id": "c6b48c55-e8e1-4183-a877-1ad0e098f128",
       "comment": "",
       "command": "click",
-      "target": "css=.btn:nth-child(13) > span",
+      "target": "css=.btn:nth-child(11) > span",
       "targets": [
-        ["css=.btn:nth-child(13) > span", "css:finder"],
-        ["xpath=//label[12]/span", "xpath:position"],
-        ["xpath=//span[contains(.,' RADIOLOGY OTHERS - Ruangan for testing')]", "xpath:innerText"]
+        ["css=.btn:nth-child(11) > span", "css:finder"],
+        ["xpath=//label[10]/span", "xpath:position"],
+        ["xpath=//span[contains(.,' PANORAMIC & DENTAL X-RAY - Ruangan 3')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "6c22f739-ffa6-4f49-9521-7bf0d947bd06",
+      "id": "4938618d-9adf-445f-8c18-c12595472de8",
       "comment": "",
       "command": "click",
       "target": "css=.ml-auto",
@@ -44,49 +44,17 @@
       ],
       "value": ""
     }, {
-      "id": "b8c4cab5-6ccf-4c39-951f-e77a93143419",
+      "id": "521b064d-7f6d-44a5-bc2c-e611ab0fe60b",
       "comment": "",
       "command": "mouseOver",
-      "target": "css=.ml-auto",
+      "target": "css=.search-name-button > .fa",
       "targets": [
-        ["css=.ml-auto", "css:finder"],
-        ["xpath=//button[@type='button']", "xpath:attributes"],
-        ["xpath=//app-table-list-daily-fcfs/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Jadwalkan Pasien')]", "xpath:innerText"]
+        ["css=.search-name-button > .fa", "css:finder"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "fa3e9bce-271c-4e64-9fbb-84dc24b9bd5c",
-      "comment": "",
-      "command": "mouseOut",
-      "target": "css=.ml-auto",
-      "targets": [
-        ["css=.ml-auto", "css:finder"],
-        ["xpath=//button[@type='button']", "xpath:attributes"],
-        ["xpath=//app-table-list-daily-fcfs/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Jadwalkan Pasien')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "e6b5eefd-6cc3-485e-8be8-2c5f046ace47",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,172.5)",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "b63d06c9-f615-45a4-907d-22d6996b4faa",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.search-name-button",
-      "targets": [
-        ["css=.search-name-button", "css:finder"],
-        ["xpath=(//button[@type='submit'])[4]", "xpath:attributes"],
-        ["xpath=//form/div/div[2]/div/div/button", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "f66b250f-25aa-4cf5-90e1-c42b5e0b4852",
+      "id": "25de3372-45e9-418e-b05a-0d3455ad3fc1",
       "comment": "",
       "command": "click",
       "target": "id=patient-dob-search",
@@ -99,7 +67,7 @@
       ],
       "value": ""
     }, {
-      "id": "bfb1ae20-df36-47f2-8e34-cc5ba865fa6c",
+      "id": "4c734908-a304-43f7-ac56-233615daf3c6",
       "comment": "",
       "command": "type",
       "target": "id=patient-dob-search",
@@ -110,9 +78,9 @@
         ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
         ["xpath=//form/div/div/input", "xpath:position"]
       ],
-      "value": "10-11-2001"
+      "value": "19-01-2000"
     }, {
-      "id": "cd66e599-ccba-4861-ac71-4eaf6491b60c",
+      "id": "25459dce-8d64-4e93-ba9d-f9962f5e8afc",
       "comment": "",
       "command": "click",
       "target": "id=patient-name-search",
@@ -125,7 +93,7 @@
       ],
       "value": ""
     }, {
-      "id": "5911f292-f1d9-42e9-852f-08e4cff26d53",
+      "id": "ba904082-ecb5-415a-86ce-0d78753934ea",
       "comment": "",
       "command": "type",
       "target": "id=patient-name-search",
@@ -136,9 +104,9 @@
         ["xpath=//input[@id='patient-name-search']", "xpath:attributes"],
         ["xpath=//div[2]/div/input", "xpath:position"]
       ],
-      "value": "Fer D Sambo"
+      "value": "paul test"
     }, {
-      "id": "23f53b4b-d5e3-4975-b567-6c52044d4b6f",
+      "id": "93fdd2b5-5726-47bc-b3ac-99e24501d82b",
       "comment": "",
       "command": "click",
       "target": "css=.search-name-button > .fa",
@@ -148,37 +116,20 @@
       ],
       "value": ""
     }, {
-      "id": "f11ed20f-1387-4d05-8bc7-3a4a9b6ce7d9",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.search-name-button > .fa",
-      "targets": [
-        ["css=.search-name-button > .fa", "css:finder"],
-        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "faf88f97-198f-4bb3-b393-88ef5b97ae46",
-      "comment": "",
-      "command": "mouseOut",
-      "target": "css=.search-name-button > .fa",
-      "targets": [
-        ["css=.search-name-button > .fa", "css:finder"],
-        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "69d7221c-3da0-446b-8e05-b93ce2e2b0bf",
+      "id": "65f01753-2deb-4a59-a16b-2946c05a451e",
       "comment": "",
       "command": "click",
-      "target": "css=.item-hover > td:nth-child(1)",
+      "target": "id=radio2",
       "targets": [
-        ["css=.item-hover > td:nth-child(1)", "css:finder"],
-        ["xpath=//div[5]/table/tbody/tr/td", "xpath:position"]
+        ["id=radio2", "id"],
+        ["name=optradio", "name"],
+        ["css=#radio2", "css:finder"],
+        ["xpath=//input[@id='radio2']", "xpath:attributes"],
+        ["xpath=//td/div/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "508c33da-5c92-4e4e-b475-fff0d3b96b1b",
+      "id": "3d9b0c5f-8230-433b-9cdd-ff7791759481",
       "comment": "",
       "command": "click",
       "target": "css=.btn-add-examination",
@@ -189,18 +140,18 @@
       ],
       "value": ""
     }, {
-      "id": "17176c15-1d9e-4bbc-bf89-37bb49cfc24e",
+      "id": "256b0cf6-0e07-4eb2-bf9e-90c4fa1c201a",
       "comment": "",
       "command": "click",
       "target": "css=.col-md-4:nth-child(1) .ml-2",
       "targets": [
         ["css=.col-md-4:nth-child(1) .ml-2", "css:finder"],
         ["xpath=//section/div[2]/div/label/span", "xpath:position"],
-        ["xpath=//span[contains(.,'CD / DVD')]", "xpath:innerText"]
+        ["xpath=//span[contains(.,'CBCT')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "8fdd2785-088a-4893-b327-4f1c4b904bfb",
+      "id": "c0cad207-f44e-471d-87cd-858dc359c5fc",
       "comment": "",
       "command": "click",
       "target": "css=.btn-success:nth-child(2)",
@@ -212,17 +163,19 @@
       ],
       "value": ""
     }, {
-      "id": "d87f6e19-c6c4-4cfc-a88d-76854f4fdadc",
+      "id": "ec4ed9b4-7996-4dc8-8356-d02c23a02e12",
       "comment": "",
       "command": "click",
-      "target": "css=.form-check:nth-child(3) > .form-check-label",
+      "target": "id=bpjsRadio2",
       "targets": [
-        ["css=.form-check:nth-child(3) > .form-check-label", "css:finder"],
-        ["xpath=//div[2]/div/div[3]/label", "xpath:position"]
+        ["id=bpjsRadio2", "id"],
+        ["css=#bpjsRadio2", "css:finder"],
+        ["xpath=//input[@id='bpjsRadio2']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div[3]/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "0ef553b9-e73b-46fe-adf5-69977a721a59",
+      "id": "0a54c033-826b-47c9-a27b-468f22b71ae8",
       "comment": "",
       "command": "click",
       "target": "id=btn-submit-modality-slot",
@@ -234,7 +187,7 @@
       ],
       "value": ""
     }, {
-      "id": "c1ff066f-b1f8-4f8c-b00f-f4f6c1bd9017",
+      "id": "f6838a0d-44a0-47f1-8714-3ff07e6ea5f9",
       "comment": "",
       "command": "click",
       "target": "css=td:nth-child(8)",
@@ -244,14 +197,7 @@
       ],
       "value": ""
     }, {
-      "id": "a093fcc9-65a0-475d-84b7-74208b0071a8",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,172.5)",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "387fef71-52f3-47db-8ea5-84b7012e5020",
+      "id": "fbdfb1b4-1a3e-4ec7-a8b6-f701d407bb72",
       "comment": "",
       "command": "click",
       "target": "xpath=(//button[@id='btn-create-admission'])[2]",
@@ -263,7 +209,20 @@
       ],
       "value": ""
     }, {
-      "id": "30a1acd1-7088-46e7-871d-1d6d5882bb74",
+      "id": "b61fd9ad-3b26-41c8-99a4-78c8dbb6d654",
+      "comment": "",
+      "command": "click",
+      "target": "id=formSigned",
+      "targets": [
+        ["id=formSigned", "id"],
+        ["name=formSigned", "name"],
+        ["css=#formSigned", "css:finder"],
+        ["xpath=//input[@id='formSigned']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4ff5e48-62dd-4d74-9cfb-bae94a82d855",
       "comment": "",
       "command": "click",
       "target": "id=btn-create-admission",
@@ -276,7 +235,7 @@
       ],
       "value": ""
     }, {
-      "id": "1ae8265a-8023-43c4-acf9-1cdc0160499e",
+      "id": "83097a98-356f-4804-ad15-0a80320e054a",
       "comment": "",
       "command": "click",
       "target": "css=.modal-content > .modal-content .back-button",
@@ -286,31 +245,108 @@
       ],
       "value": ""
     }, {
-      "id": "4441bf4c-5288-44fb-aed2-cb8fc98043c5",
+      "id": "b54adc8b-1df8-4929-a1a4-75fcbf4b4763",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9910cbf0-f559-4d43-bc13-a08f6e14c755",
+    "name": "Get Queue",
+    "commands": [{
+      "id": "f3018d84-b1fe-457d-8fbe-22210559ca78",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.100:5555/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "668bf66b-5a0d-4fe8-be85-8a50f1295f9b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8e58f8b-6534-4fc2-9658-44d435e57e5c",
       "comment": "",
       "command": "click",
-      "target": "css=td:nth-child(8)",
+      "target": "css=.main-menu-list:nth-child(1) > #main-menu-button .header-text-2",
       "targets": [
-        ["css=td:nth-child(8)", "css:finder"],
-        ["xpath=//td[8]", "xpath:position"]
+        ["css=.main-menu-list:nth-child(1) > #main-menu-button .header-text-2", "css:finder"],
+        ["xpath=//div[@id='main-menu-button']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "3dc2e07d-97f4-44c6-8530-d0d8288c861a",
+      "id": "19ee021c-cd17-4971-a216-5b5a2ffcc7d5",
       "comment": "",
-      "command": "mouseOver",
-      "target": "id=btn-create-check-in",
+      "command": "click",
+      "target": "css=#menu-button-0 > .style-word-1",
       "targets": [
-        ["id=btn-create-check-in", "id"],
-        ["css=#btn-create-check-in", "css:finder"],
-        ["xpath=//button[@id='btn-create-check-in']", "xpath:attributes"],
-        ["xpath=//div[@id='modal-detail-schedule']/div[2]/div[2]/button[3]", "xpath:idRelative"],
-        ["xpath=//button[3]", "xpath:position"],
-        ["xpath=//button[contains(.,'Check In Pasien')]", "xpath:innerText"]
+        ["css=#menu-button-0 > .style-word-1", "css:finder"],
+        ["xpath=//div[@id='menu-button-0']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "e04e5605-8414-4c41-98c5-5c6e93c9b5ec",
+      "id": "d8bb0de2-8005-4493-80db-b7e0a868b7ab",
+      "comment": "",
+      "command": "storeText",
+      "target": "id=queue-number",
+      "targets": [],
+      "value": "queueNumber"
+    }, {
+      "id": "37b39f3c-37c0-4d21-9fcd-cffba0e222b9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e2eb74a7-22ed-4385-b390-3adf3549bd84",
+    "name": "Input Queue",
+    "commands": [{
+      "id": "ed0932c0-8669-482e-a6f1-31502b989e5b",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b1e9f92-4911-42e2-97ce-90dd7ce4a9f6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f07dc52-51a3-46b3-aea8-b1e974b8acf1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(11) > span",
+      "targets": [
+        ["css=.btn:nth-child(11) > span", "css:finder"],
+        ["xpath=//label[10]/span", "xpath:position"],
+        ["xpath=//span[contains(.,' PANORAMIC & DENTAL X-RAY - Ruangan 3')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "86d73ade-8afd-4e74-925f-f994bea664b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cursor-pointer:nth-child(1) > td:nth-child(6)",
+      "targets": [
+        ["css=.cursor-pointer:nth-child(1) > td:nth-child(6)", "css:finder"],
+        ["xpath=//app-table-list-daily-fcfs/table/tbody/tr/td[6]", "xpath:position"],
+        ["xpath=//td[contains(.,'CBCT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f7622bf-0f11-4e26-89b1-82edd2fa52ed",
       "comment": "",
       "command": "click",
       "target": "id=btn-create-check-in",
@@ -324,21 +360,7 @@
       ],
       "value": ""
     }, {
-      "id": "53a858e4-ee71-441e-9dd9-b281a4224871",
-      "comment": "",
-      "command": "mouseOut",
-      "target": "id=btn-create-check-in",
-      "targets": [
-        ["id=btn-create-check-in", "id"],
-        ["css=#btn-create-check-in", "css:finder"],
-        ["xpath=//button[@id='btn-create-check-in']", "xpath:attributes"],
-        ["xpath=//div[@id='modal-detail-schedule']/div[2]/div[2]/button[3]", "xpath:idRelative"],
-        ["xpath=//button[3]", "xpath:position"],
-        ["xpath=//button[contains(.,'Check In Pasien')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "f70e9feb-f2ef-480d-adf4-c0e62dcb0e22",
+      "id": "403e3141-eaf5-4bec-a60e-ecc8bdaeda6e",
       "comment": "",
       "command": "click",
       "target": "css=.swal2-confirm",
@@ -350,31 +372,14 @@
       ],
       "value": ""
     }, {
-      "id": "c85ceb59-b39e-4a60-8c07-e020f2c2689a",
+      "id": "d308d543-5398-44a0-a367-66e480ebebf0",
       "comment": "",
-      "command": "click",
+      "command": "sendKeys",
       "target": "id=input-number",
-      "targets": [
-        ["id=input-number", "id"],
-        ["css=#input-number", "css:finder"],
-        ["xpath=//input[@id='input-number']", "xpath:attributes"],
-        ["xpath=//div[2]/div/div/input", "xpath:position"]
-      ],
-      "value": ""
+      "targets": [],
+      "value": "${queueNumber}"
     }, {
-      "id": "6f756bc2-bd53-4c89-9bec-f03c39cdf400",
-      "comment": "",
-      "command": "type",
-      "target": "id=input-number",
-      "targets": [
-        ["id=input-number", "id"],
-        ["css=#input-number", "css:finder"],
-        ["xpath=//input[@id='input-number']", "xpath:attributes"],
-        ["xpath=//div[2]/div/div/input", "xpath:position"]
-      ],
-      "value": "BQ008"
-    }, {
-      "id": "e4639530-1a54-4e73-b8ac-5519ecc2a476",
+      "id": "7d48189d-e8a6-4e07-bbe6-02b4897bb49d",
       "comment": "",
       "command": "click",
       "target": "id=btn-check-in",
@@ -387,51 +392,22 @@
       ],
       "value": ""
     }, {
-      "id": "c147cbb3-e324-4945-ab39-a678a76e0986",
+      "id": "21f31af8-b6c2-4c14-817f-dbe94270869d",
       "comment": "",
-      "command": "mouseOver",
-      "target": "id=btn-check-in",
-      "targets": [
-        ["id=btn-check-in", "id"],
-        ["css=#btn-check-in", "css:finder"],
-        ["xpath=//button[@id='btn-check-in']", "xpath:attributes"],
-        ["xpath=//div[4]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Check-in')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "f30aa0e2-45cd-40b3-83ca-908623a0a3d6",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.ml-2:nth-child(1)",
-      "targets": [
-        ["css=.ml-2:nth-child(1)", "css:finder"],
-        ["xpath=//div[4]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,' Cetak Tiket')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "98ebe2f9-2af0-4103-b59f-65fb5d3407bc",
-      "comment": "",
-      "command": "click",
-      "target": "css=.close",
-      "targets": [
-        ["css=.close", "css:finder"],
-        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
-        ["xpath=//app-modal-queue-number/div[2]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'×')]", "xpath:innerText"]
-      ],
+      "command": "close",
+      "target": "",
+      "targets": [],
       "value": ""
     }]
   }],
   "suites": [{
     "id": "a3cf227b-72c1-4e6d-8e7d-93370b206ff4",
-    "name": "Default Suite",
+    "name": "Create Appointment - Checkin",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["6672bd8e-92e4-43f4-8396-e0468427d558"]
+    "tests": ["6672bd8e-92e4-43f4-8396-e0468427d558", "9910cbf0-f559-4d43-bc13-a08f6e14c755", "e2eb74a7-22ed-4385-b390-3adf3549bd84"]
   }],
-  "urls": ["http://10.85.139.13/"],
+  "urls": ["http://10.85.139.13/", "http://10.85.139.13/staging-msm-fe-radiology/schedule"],
   "plugins": []
 }

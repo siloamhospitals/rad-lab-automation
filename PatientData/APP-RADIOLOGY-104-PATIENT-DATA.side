@@ -1,0 +1,278 @@
+{
+  "id": "915caf73-6993-465c-a2a0-98396bc16ece",
+  "version": "2.0",
+  "name": "APP-RADIOLOGY-104-PATIENT-DATA",
+  "url": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+  "tests": [{
+    "id": "d43ee4f5-839f-4b03-946c-f5b276255c37",
+    "name": "Edit Patient Data From Create Appointment",
+    "commands": [{
+      "id": "2688f9e1-dc92-4b45-837d-2aadbd270110",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ab471b2-084e-4100-bc50-b35f970bb1de",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6535193e-0fe6-4a45-9e1b-81ee4ea0b2c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(13) > span",
+      "targets": [
+        ["css=.btn:nth-child(13) > span", "css:finder"],
+        ["xpath=//label[12]/span", "xpath:position"],
+        ["xpath=//span[contains(.,' RADIOLOGY OTHERS - Ruangan for testing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55d141b1-5488-4120-971e-34050b597fa3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ml-auto",
+      "targets": [
+        ["css=.ml-auto", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//app-table-list-daily-fcfs/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Jadwalkan Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "48a97612-574e-4007-941c-3b41d2ef9913",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,172.5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "826321d3-a45f-44d6-ac63-0f603cf48db5",
+      "comment": "",
+      "command": "click",
+      "target": "id=patient-dob-search",
+      "targets": [
+        ["id=patient-dob-search", "id"],
+        ["name=birth-date", "name"],
+        ["css=#patient-dob-search", "css:finder"],
+        ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb6a0f99-9f7b-4e20-8a9d-dd645b73241d",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-dob-search",
+      "targets": [
+        ["id=patient-dob-search", "id"],
+        ["name=birth-date", "name"],
+        ["css=#patient-dob-search", "css:finder"],
+        ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": "10-11-2001"
+    }, {
+      "id": "a81387ed-e063-4a2b-9003-cbc660968634",
+      "comment": "",
+      "command": "click",
+      "target": "id=patient-name-search",
+      "targets": [
+        ["id=patient-name-search", "id"],
+        ["name=patient-name-search", "name"],
+        ["css=#patient-name-search", "css:finder"],
+        ["xpath=//input[@id='patient-name-search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "158ecede-e18d-4dd0-89fb-f01ccd6ccfb8",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-name-search",
+      "targets": [
+        ["id=patient-name-search", "id"],
+        ["name=patient-name-search", "name"],
+        ["css=#patient-name-search", "css:finder"],
+        ["xpath=//input[@id='patient-name-search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Fer D Sambo"
+    }, {
+      "id": "7aaaa515-6ac8-49c2-8866-4196215ff5c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-name-button",
+      "targets": [
+        ["css=.search-name-button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[4]", "xpath:attributes"],
+        ["xpath=//form/div/div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6760d99d-b636-439a-accc-9739f099cdb5",
+      "comment": "",
+      "command": "click",
+      "target": "id=radio2",
+      "targets": [
+        ["id=radio2", "id"],
+        ["name=optradio", "name"],
+        ["css=#radio2", "css:finder"],
+        ["xpath=//input[@id='radio2']", "xpath:attributes"],
+        ["xpath=//td/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4aa87658-0df9-459e-8cf7-93acf19d97a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-color",
+      "targets": [
+        ["css=.custom-color", "css:finder"],
+        ["xpath=//div[4]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,' Ubah Data Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08e37c46-a8ab-4e55-95cd-cc26f7eae468",
+      "comment": "",
+      "command": "type",
+      "target": "id=contactName",
+      "targets": [
+        ["id=contactName", "id"],
+        ["name=contactName", "name"],
+        ["css=#contactName", "css:finder"],
+        ["xpath=//input[@id='contactName']", "xpath:attributes"],
+        ["xpath=//section[@id='emergency']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "siloam hospital"
+    }, {
+      "id": "8c6a95d7-2d91-4880-86c6-577f20de400a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Simpan dan Lanjutkan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "edb065cb-490a-4861-a9f9-f919ba4c36fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ml-2",
+      "targets": [
+        ["css=.ml-2", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Lanjutkan Simpan Data')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f68e69c8-86d2-49f0-9335-a398b1e4cb0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80c4553c-42bb-4d7a-9fd6-57b46a7a31e0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,172.5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c518264-f03f-4bf9-9e2e-b5521cc05096",
+      "comment": "",
+      "command": "click",
+      "target": "id=radio2",
+      "targets": [
+        ["id=radio2", "id"],
+        ["name=optradio", "name"],
+        ["css=#radio2", "css:finder"],
+        ["xpath=//input[@id='radio2']", "xpath:attributes"],
+        ["xpath=//td/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b265c358-8441-4e2f-8971-81ea80a09c88",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-add-examination",
+      "targets": [
+        ["css=.btn-add-examination", "css:finder"],
+        ["xpath=//div/div/div/div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Tambah Pemeriksaan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b6465f1-3af5-43d1-8a4f-e6193fee2a28",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4:nth-child(1) .ml-2",
+      "targets": [
+        ["css=.col-md-4:nth-child(1) .ml-2", "css:finder"],
+        ["xpath=//section/div[2]/div/label/span", "xpath:position"],
+        ["xpath=//span[contains(.,'CD / DVD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "344c3bf7-40a2-4695-94be-364f33ea1773",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success:nth-child(2)",
+      "targets": [
+        ["css=.btn-success:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[10]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Simpan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24545238-d797-4760-a583-991d4773d534",
+      "comment": "",
+      "command": "click",
+      "target": "id=bpjsRadio2",
+      "targets": [
+        ["id=bpjsRadio2", "id"],
+        ["css=#bpjsRadio2", "css:finder"],
+        ["xpath=//input[@id='bpjsRadio2']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4421e8df-73fc-4566-87ef-f82611141116",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-submit-modality-slot",
+      "targets": [
+        ["id=btn-submit-modality-slot", "id"],
+        ["css=#btn-submit-modality-slot", "css:finder"],
+        ["xpath=//button[@id='btn-submit-modality-slot']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1dceca65-d1fd-4162-82d2-c99c897ec5dc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d43ee4f5-839f-4b03-946c-f5b276255c37"]
+  }],
+  "urls": [],
+  "plugins": []
+}
