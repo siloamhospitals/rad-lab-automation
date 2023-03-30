@@ -1,0 +1,524 @@
+{
+  "id": "30fba08c-b2de-40ca-ad59-a323c529dcbe",
+  "version": "2.0",
+  "name": "TSTRAD-RAD-SCH-019-025",
+  "url": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+  "tests": [{
+    "id": "7c2611f3-7299-421b-835a-c10cd0ed052f",
+    "name": "TSTRAD-RAD-SCH-019",
+    "commands": [{
+      "id": "3c1d69a0-d524-4211-aa3d-74f73c25ed6b",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2c1bc82-1c4b-4ef0-92c1-38fb843304bd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "534c4104-82c9-4375-ac83-b30c2c6a2b5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2584da4-1576-490e-af03-f01fbfb02abb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-select-container",
+      "targets": [
+        ["css=.ng-select-container", "css:finder"],
+        ["xpath=//ng-select/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ef98968-7dcd-4ba1-8292-587bc70c3e85",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-input",
+      "targets": [
+        ["css=.ng-input", "css:finder"],
+        ["xpath=//ng-select/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d848962b-aba3-4536-a8b1-c757b794d698",
+      "comment": "",
+      "command": "click",
+      "target": "id=ac96b5d83667-1",
+      "targets": [
+        ["id=ac96b5d83667-1", "id"],
+        ["css=#ac96b5d83667-1", "css:finder"],
+        ["xpath=//div[@id='ac96b5d83667-1']", "xpath:attributes"],
+        ["xpath=//ng-dropdown-panel[@id='ac96b5d83667']/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//ng-dropdown-panel/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b16af93-9847-427a-9200-9a41c5213637",
+      "comment": "",
+      "command": "click",
+      "target": "name=daterange",
+      "targets": [
+        ["name=daterange", "name"],
+        ["css=.text-center", "css:finder"],
+        ["xpath=//input[@name='daterange']", "xpath:attributes"],
+        ["xpath=//app-date-picker/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2be2334e-4933-4ad7-ad75-d13afd8030ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) > .available:nth-child(6)",
+      "targets": [
+        ["css=tr:nth-child(5) > .available:nth-child(6)", "css:finder"],
+        ["xpath=//tr[5]/td[6]", "xpath:position"],
+        ["xpath=//td[contains(.,'31')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "449f8494-c5d2-474d-a78c-50eff9a75a03",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2ac6217e-2af9-4788-b96c-a751cf912aa9",
+    "name": "TSTRAD-RAD-SCH-020",
+    "commands": [{
+      "id": "e767c403-e06a-4f00-a59a-af80919a50a2",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e10f1d4e-4820-400d-bca5-56f3946b602b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75d98ea7-1272-4d71-9b3f-0c54162ec8fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d588f71-742e-4ce7-8f49-672a2204fd28",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-select-container",
+      "targets": [
+        ["css=.ng-select-container", "css:finder"],
+        ["xpath=//ng-select/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "adee00d0-994c-41bd-b77f-d052394dabac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-input",
+      "targets": [
+        ["css=.ng-input", "css:finder"],
+        ["xpath=//ng-select/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b3a4751-bfdd-4a0b-90eb-138519c71f65",
+      "comment": "",
+      "command": "click",
+      "target": "id=ac96b5d83667-1",
+      "targets": [
+        ["id=ac96b5d83667-1", "id"],
+        ["css=#ac96b5d83667-1", "css:finder"],
+        ["xpath=//div[@id='ac96b5d83667-1']", "xpath:attributes"],
+        ["xpath=//ng-dropdown-panel[@id='ac96b5d83667']/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//ng-dropdown-panel/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c9d6985-91eb-40f4-82df-648dda59697d",
+      "comment": "",
+      "command": "click",
+      "target": "name=daterange",
+      "targets": [
+        ["name=daterange", "name"],
+        ["css=.pl-4", "css:finder"],
+        ["xpath=//input[@name='daterange']", "xpath:attributes"],
+        ["xpath=//app-date-picker/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "341a9235-9983-4c87-a4f6-088daed6f109",
+      "comment": "",
+      "command": "click",
+      "target": "css=.next",
+      "targets": [
+        ["css=.next", "css:finder"],
+        ["xpath=//th[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3592b1fd-1446-4386-bd37-23a1ac0cc439",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) > .available:nth-child(6)",
+      "targets": [
+        ["css=tr:nth-child(5) > .available:nth-child(6)", "css:finder"],
+        ["xpath=//tr[5]/td[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b454a866-5ee8-40d9-b342-966adf86dde3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4bbb2cc7-1ee6-44c2-afa6-e33e32fa80bd",
+    "name": "TSTRAD-RAD-SCH-021",
+    "commands": [{
+      "id": "bbfbe46b-df7a-4462-8e09-44be8f06818d",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bd30822-10df-4c0e-9805-0108c686c952",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4e10122-26d6-42ef-80e4-273bda9b207b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6a38c40-d279-4651-a95a-e2667f6219fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-select-container",
+      "targets": [
+        ["css=.ng-select-container", "css:finder"],
+        ["xpath=//ng-select/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27ca7815-3b6b-4180-8081-b0fb74acfb33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-input",
+      "targets": [
+        ["css=.ng-input", "css:finder"],
+        ["xpath=//ng-select/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efce1119-3a5b-4b51-af58-d384bf7cc34e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ac8995669f51-2 > .ng-option-label",
+      "targets": [
+        ["css=#ac8995669f51-2 > .ng-option-label", "css:finder"],
+        ["xpath=//div[@id='ac8995669f51-2']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Bulan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb521345-0b01-474b-817f-2f36e87cac15",
+      "comment": "",
+      "command": "click",
+      "target": "name=daterange",
+      "targets": [
+        ["name=daterange", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='daterange']", "xpath:attributes"],
+        ["xpath=//app-date-picker/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcc00b9d-7e6f-4166-931b-db2d0e64d012",
+      "comment": "",
+      "command": "click",
+      "target": "css=.next",
+      "targets": [
+        ["css=.next", "css:finder"],
+        ["xpath=//th[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dff61ce6-4fb1-492c-9bc5-5851611532e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > .available:nth-child(4)",
+      "targets": [
+        ["css=tr:nth-child(2) > .available:nth-child(4)", "css:finder"],
+        ["xpath=//tr[2]/td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'5')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6183e7ab-e0d6-4fcd-a5ca-541ac7501c1a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b7598177-3490-4496-ad6a-8848389f535e",
+    "name": "TSTRAD-RAD-SCH-022",
+    "commands": [{
+      "id": "c914ad07-903b-4cbd-ab84-9222f80901e7",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc120f91-4574-4768-b3c1-f33856b68f7e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60936fe6-77ac-4b63-b246-9b1fa08074ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b00d16e6-31ae-42a6-a731-d053e6275595",
+      "comment": "",
+      "command": "click",
+      "target": "name=daterange",
+      "targets": [
+        ["name=daterange", "name"],
+        ["css=.text-center", "css:finder"],
+        ["xpath=//input[@name='daterange']", "xpath:attributes"],
+        ["xpath=//app-date-picker/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d112b14-7b11-44f2-8d19-c08afa3bb711",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) > .available:nth-child(6)",
+      "targets": [
+        ["css=tr:nth-child(5) > .available:nth-child(6)", "css:finder"],
+        ["xpath=//tr[5]/td[6]", "xpath:position"],
+        ["xpath=//td[contains(.,'31')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d57d8aa-04cf-431f-9a4c-657eda03dfaf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "10ebd595-deb2-4d4c-9a6e-e1d8fcc687e0",
+    "name": "TSTRAD-RAD-SCH-023",
+    "commands": [{
+      "id": "d5c46e5e-838f-4067-833c-9bf15eb15eb9",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe65e3d2-698c-48c6-b154-a1102f10ebae",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ca2a158-95cf-468a-bc0d-8f2319e27334",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3) > span",
+      "targets": [
+        ["css=.btn:nth-child(3) > span", "css:finder"],
+        ["xpath=//label[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1327a558-1c7f-49c7-b3c9-a1f2923d72aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-flex:nth-child(1) > .btn:nth-child(2)",
+      "targets": [
+        ["css=.d-flex:nth-child(1) > .btn:nth-child(2)", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15307c63-de26-4c88-8b96-a720bc4898d3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b4a48f6b-2ef8-4f0e-bf15-ccc97f178c15",
+    "name": "TSTRAD-RAD-SCH-024",
+    "commands": [{
+      "id": "0d2926ba-b614-4607-851a-a2d6c1070847",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da9aafba-b807-43e6-ab5a-b60bd45cc9de",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f31eadb-6a1a-42e7-a185-623b8db42383",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86a0cf15-b03f-49ae-8aea-8c243e9c332c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-flex:nth-child(1) > .btn:nth-child(2)",
+      "targets": [
+        ["css=.d-flex:nth-child(1) > .btn:nth-child(2)", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4e5bd06-1d63-45fd-91f0-23eea81311a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.font-weight-bold > .ml-2",
+      "targets": [
+        ["css=.font-weight-bold > .ml-2", "css:finder"],
+        ["xpath=//div[2]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Hari Ini')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5178e39-eb07-4444-827b-0aae8a286010",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ad53760b-4460-40ca-9aa5-fc143ce67759",
+    "name": "TSTRAD-RAD-SCH-025",
+    "commands": [{
+      "id": "2776523a-6e5d-4261-bf97-cb8a8b412dc9",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "364ba0e1-caab-4ec4-83f6-635792bc29f3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c4a95f0-86ee-43c2-a87e-2ce06d59407e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-clear",
+      "targets": [
+        ["css=.btn-clear", "css:finder"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c476fc9a-8a05-4d2a-8864-a1564f06c7e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mr-3",
+      "targets": [
+        ["css=.mr-3", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a521167-09c3-4251-ab47-90b8a1816385",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mr-3",
+      "targets": [
+        ["css=.mr-3", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Bone"
+    }, {
+      "id": "d06b40d1-1825-4dc8-9e8e-4d13b327a83a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6240eeeb-36c3-4007-b39c-6742afb0028a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7c2611f3-7299-421b-835a-c10cd0ed052f", "2ac6217e-2af9-4788-b96c-a751cf912aa9", "4bbb2cc7-1ee6-44c2-afa6-e33e32fa80bd", "b7598177-3490-4496-ad6a-8848389f535e", "10ebd595-deb2-4d4c-9a6e-e1d8fcc687e0", "b4a48f6b-2ef8-4f0e-bf15-ccc97f178c15", "ad53760b-4460-40ca-9aa5-fc143ce67759"]
+  }],
+  "urls": ["http://10.85.139.13/staging-msm-fe-radiology/schedule"],
+  "plugins": []
+}
