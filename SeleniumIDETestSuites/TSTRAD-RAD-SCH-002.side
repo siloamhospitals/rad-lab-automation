@@ -1,0 +1,309 @@
+{
+  "id": "0161ce62-7bb3-43e8-be23-bc5ffffa551d",
+  "version": "2.0",
+  "name": "TSTRAD-RAD-SCH-002",
+  "url": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+  "tests": [{
+    "id": "5ee9358b-de38-439f-85fa-9ae746856e23",
+    "name": "Create Appointment to Reserve Slot",
+    "commands": [{
+      "id": "629e11c6-a707-4f62-84db-b567a0f46bc7",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c98f47b-b8f0-4176-810d-7ce10cebd15d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53d9eb95-729b-4248-9141-2a378d24dd10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0b125d1-ea77-4ebf-9897-7e625753da18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-hover:nth-child(33) > td:nth-child(5)",
+      "targets": [
+        ["css=.item-hover:nth-child(33) > td:nth-child(5)", "css:finder"],
+        ["xpath=//tr[33]/td[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "baf00a23-fd99-4bbf-8652-60bd9ac77247",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,172.5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9d3958f-eadc-43ec-8e0f-c01ca757fac8",
+      "comment": "",
+      "command": "click",
+      "target": "id=patient-dob-search",
+      "targets": [
+        ["id=patient-dob-search", "id"],
+        ["name=birth-date", "name"],
+        ["css=#patient-dob-search", "css:finder"],
+        ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84db0994-41af-4281-8ae1-5c7b1d997ded",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-dob-search",
+      "targets": [
+        ["id=patient-dob-search", "id"],
+        ["name=birth-date", "name"],
+        ["css=#patient-dob-search", "css:finder"],
+        ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": "10-11-2001"
+    }, {
+      "id": "3a4a0707-9a15-469e-8e02-167668903a5b",
+      "comment": "",
+      "command": "click",
+      "target": "id=patient-name-search",
+      "targets": [
+        ["id=patient-name-search", "id"],
+        ["name=patient-name-search", "name"],
+        ["css=#patient-name-search", "css:finder"],
+        ["xpath=//input[@id='patient-name-search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e36927f4-a814-4aae-a463-8e84ec3827e0",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-name-search",
+      "targets": [
+        ["id=patient-name-search", "id"],
+        ["name=patient-name-search", "name"],
+        ["css=#patient-name-search", "css:finder"],
+        ["xpath=//input[@id='patient-name-search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Fer D Sambo"
+    }, {
+      "id": "4fad1d46-21f0-41da-95c6-27b8098547fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-name-button > .fa",
+      "targets": [
+        ["css=.search-name-button > .fa", "css:finder"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4338cc2-67ea-47a2-a4b8-6d21e663233f",
+      "comment": "",
+      "command": "click",
+      "target": "id=radio2",
+      "targets": [
+        ["id=radio2", "id"],
+        ["name=optradio", "name"],
+        ["css=#radio2", "css:finder"],
+        ["xpath=//input[@id='radio2']", "xpath:attributes"],
+        ["xpath=//td/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38bd1eee-87ab-4641-b2ed-bafcd4c022f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-add-examination",
+      "targets": [
+        ["css=.btn-add-examination", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Tambah Pemeriksaan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e170fce0-f9b9-417f-b815-fdfddc95f5c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4:nth-child(1) .ml-2",
+      "targets": [
+        ["css=.col-md-4:nth-child(1) .ml-2", "css:finder"],
+        ["xpath=//section/div[2]/div/label/span", "xpath:position"],
+        ["xpath=//span[contains(.,'BMD TOTAL BODY RAD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19f2e53a-996e-41a0-b08b-19984693cb5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success:nth-child(2)",
+      "targets": [
+        ["css=.btn-success:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[10]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Simpan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5146c196-64e3-49e3-abd9-b91c78f42892",
+      "comment": "",
+      "command": "click",
+      "target": "id=bpjsRadio2",
+      "targets": [
+        ["id=bpjsRadio2", "id"],
+        ["css=#bpjsRadio2", "css:finder"],
+        ["xpath=//input[@id='bpjsRadio2']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "520a027b-668d-45a1-b14d-c1769b9aca51",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-submit-modality-slot",
+      "targets": [
+        ["id=btn-submit-modality-slot", "id"],
+        ["css=#btn-submit-modality-slot", "css:finder"],
+        ["xpath=//button[@id='btn-submit-modality-slot']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Jadwalkan Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29f17aa7-f4f0-4007-9605-bd453ef2f535",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6efb77b8-8344-400a-9343-36e7d6fd6896",
+    "name": "Reschedule Appointment to Other Time",
+    "commands": [{
+      "id": "2a3f1df5-f8d5-4ef9-bac1-c2a0c7d85d0e",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4b3ded2-9626-475d-87cd-50ee130e6f64",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fb5fc60-1976-481c-9ef9-8dc3f23e99d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3) > span",
+      "targets": [
+        ["css=.btn:nth-child(3) > span", "css:finder"],
+        ["xpath=//label[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1720ee10-5d09-41ba-bf33-310d13c2028a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-hover:nth-child(33) > .table-td:nth-child(5)",
+      "targets": [
+        ["css=.item-hover:nth-child(33) > .table-td:nth-child(5)", "css:finder"],
+        ["xpath=//tr[33]/td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'864442')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd3ce9f2-cdd8-40b6-b3e3-e4bdf8dca6fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=app-time-picker:nth-child(2) .form-control",
+      "targets": [
+        ["css=app-time-picker:nth-child(2) .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[9]", "xpath:attributes"],
+        ["xpath=(//div[@id='timer-picker']/input)[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/app-time-picker/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67d16318-7eb2-4d39-905d-de7cdd0c9a70",
+      "comment": "",
+      "command": "click",
+      "target": "css=.formclass",
+      "targets": [
+        ["css=.formclass", "css:finder"],
+        ["xpath=//div[@id='modal-detail-schedule']/form/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05dac2b1-d4b3-4d59-b7c3-8c8f0efc395f",
+      "comment": "",
+      "command": "click",
+      "target": "css=app-time-picker:nth-child(3) .text-left",
+      "targets": [
+        ["css=app-time-picker:nth-child(3) .text-left", "css:finder"],
+        ["xpath=(//input[@type='text'])[10]", "xpath:attributes"],
+        ["xpath=(//div[@id='timer-picker']/input)[4]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/app-time-picker[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a733e5cb-4f89-473f-9a81-7c694fbae2f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.formclass",
+      "targets": [
+        ["css=.formclass", "css:finder"],
+        ["xpath=//div[@id='modal-detail-schedule']/form/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "471d296f-b5f9-4646-8d07-7d0dcb57bc76",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-update-modality-slot",
+      "targets": [
+        ["id=btn-update-modality-slot", "id"],
+        ["css=#btn-update-modality-slot", "css:finder"],
+        ["xpath=//button[@id='btn-update-modality-slot']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-detail-schedule']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//app-modal-detail-schedule/div/div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Simpan Perubahan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9361bf76-5f1d-4b5d-9fb4-28a8707b12ee",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a069c59a-daec-4aef-93bf-324a129e2caf",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5ee9358b-de38-439f-85fa-9ae746856e23", "6efb77b8-8344-400a-9343-36e7d6fd6896"]
+  }],
+  "urls": ["http://10.85.139.13/", "http://10.85.139.13/staging-msm-fe-radiology/schedule"],
+  "plugins": []
+}
