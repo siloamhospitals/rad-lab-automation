@@ -1,0 +1,100 @@
+{
+  "id": "fa075303-4ee5-4d09-a0da-5530cd3f6056",
+  "version": "2.0",
+  "name": "TSTRAD-RAD-SCH-018",
+  "url": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+  "tests": [{
+    "id": "f6b5aabd-c028-4d80-bd4e-52f5d711ab88",
+    "name": "Search Appointment by Filter Time Range + BPJS",
+    "commands": [{
+      "id": "842a1e9d-6ef1-4689-afa4-59f1dacca943",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71773283-d7f4-4e0e-882a-8a5d945aca61",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c58ea2f5-4c74-4da6-b9d0-4a17bc095022",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3) > span",
+      "targets": [
+        ["css=.btn:nth-child(3) > span", "css:finder"],
+        ["xpath=//label[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34005539-b0ff-4b9e-8180-7071c86d066e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#timer-picker > .text-left",
+      "targets": [
+        ["css=#timer-picker > .text-left", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='timer-picker']/input", "xpath:idRelative"],
+        ["xpath=//app-time-picker/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d55f42a2-d63f-493e-b029-2d793b2d9481",
+      "comment": "",
+      "command": "click",
+      "target": "css=app-widget-radiology-schedule > div",
+      "targets": [
+        ["css=app-widget-radiology-schedule > div", "css:finder"],
+        ["xpath=//app-widget-radiology-schedule/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebc7518d-e645-42e9-95f6-0d234d6bc6be",
+      "comment": "",
+      "command": "click",
+      "target": "css=#timer-picker > .ng-untouched",
+      "targets": [
+        ["css=#timer-picker > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=(//div[@id='timer-picker']/input)[2]", "xpath:idRelative"],
+        ["xpath=//app-time-picker[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "221b3ecc-59c0-46ad-9171-2deda0bd55dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=app-widget-radiology-schedule > div",
+      "targets": [
+        ["css=app-widget-radiology-schedule > div", "css:finder"],
+        ["xpath=//app-widget-radiology-schedule/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8baea3a0-44f9-4e07-9d77-6ab2ee3d3203",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ml-2 > .ng-untouched",
+      "targets": [
+        ["css=.ml-2 > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/div/div[2]/div/label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9a2ed6a4-d4a2-4c3f-bb00-6d42b64c0165",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f6b5aabd-c028-4d80-bd4e-52f5d711ab88"]
+  }],
+  "urls": ["http://10.85.139.13/", "http://10.85.139.13/staging-msm-fe-radiology/schedule"],
+  "plugins": []
+}

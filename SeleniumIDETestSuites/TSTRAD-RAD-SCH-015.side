@@ -1,0 +1,79 @@
+{
+  "id": "fa075303-4ee5-4d09-a0da-5530cd3f6056",
+  "version": "2.0",
+  "name": "TSTRAD-RAD-SCH-015",
+  "url": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+  "tests": [{
+    "id": "f6b5aabd-c028-4d80-bd4e-52f5d711ab88",
+    "name": "Search Appointment by Name",
+    "commands": [{
+      "id": "778893f5-844a-4001-9941-6137f2530f6f",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "433a6dff-87d5-4646-a959-f0c0c9d186e5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "718c9759-c497-48bf-87e1-9eeb49fcaec3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3) > span",
+      "targets": [
+        ["css=.btn:nth-child(3) > span", "css:finder"],
+        ["xpath=//label[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b430c5b-3c61-4679-8e84-df12f7a5aa07",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.ng-touched > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "Fer"
+    }, {
+      "id": "21c9e52b-9850-4f8d-985e-ed4ef563d000",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-touched > .fa",
+      "targets": [
+        ["css=.ng-touched > .fa", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17b29337-d483-494c-b912-71ca9f77ba76",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cursor-pointer:nth-child(1) > td:nth-child(4)",
+      "targets": [
+        ["css=.cursor-pointer:nth-child(1) > td:nth-child(4)", "css:finder"],
+        ["xpath=//app-table-filter-schedule/table/tbody/tr/td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'2001-11-10')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9a2ed6a4-d4a2-4c3f-bb00-6d42b64c0165",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f6b5aabd-c028-4d80-bd4e-52f5d711ab88"]
+  }],
+  "urls": ["http://10.85.139.13/", "http://10.85.139.13/staging-msm-fe-radiology/schedule"],
+  "plugins": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "fa075303-4ee5-4d09-a0da-5530cd3f6056",
+  "version": "2.0",
+  "name": "TSTRAD-RAD-SCH-016",
+  "url": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+  "tests": [{
+    "id": "f6b5aabd-c028-4d80-bd4e-52f5d711ab88",
+    "name": "Search Appointment by Mr Local",
+    "commands": [{
+      "id": "ee4035b9-0cc8-4c08-9e20-413d118058ad",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac214b31-42e7-44c3-b036-4a0d3747ba85",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51534fe7-6ee4-4556-a6c5-56165eb8a3d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3) > span",
+      "targets": [
+        ["css=.btn:nth-child(3) > span", "css:finder"],
+        ["xpath=//label[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37655687-409d-4062-9ab1-0aaaaaea2230",
+      "comment": "",
+      "command": "click",
+      "target": "name=local_mr_no",
+      "targets": [
+        ["name=local_mr_no", "name"],
+        ["css=.col-md-2:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='local_mr_no']", "xpath:attributes"],
+        ["xpath=//form[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdd2ac55-2ddc-43b4-8658-cf5e05678289",
+      "comment": "",
+      "command": "type",
+      "target": "name=local_mr_no",
+      "targets": [
+        ["name=local_mr_no", "name"],
+        ["css=.ng-invalid:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='local_mr_no']", "xpath:attributes"],
+        ["xpath=//form[2]/input", "xpath:position"]
+      ],
+      "value": "864442"
+    }, {
+      "id": "432e741b-1a26-4440-97de-a8e5305cfa87",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cursor-pointer:nth-child(1) > td:nth-child(5)",
+      "targets": [
+        ["css=.cursor-pointer:nth-child(1) > td:nth-child(5)", "css:finder"],
+        ["xpath=//app-table-filter-schedule/table/tbody/tr/td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'864442')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9a2ed6a4-d4a2-4c3f-bb00-6d42b64c0165",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f6b5aabd-c028-4d80-bd4e-52f5d711ab88"]
+  }],
+  "urls": ["http://10.85.139.13/", "http://10.85.139.13/staging-msm-fe-radiology/schedule"],
+  "plugins": []
+}
