@@ -1,0 +1,2435 @@
+{
+  "id": "1995c26c-9b81-4578-b48a-34ae8e32e705",
+  "version": "2.0",
+  "name": "Radiology: Queue Monitor",
+  "url": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+  "tests": [{
+    "id": "548bc788-04eb-4aa0-a985-117682aa7258",
+    "name": "Create Appointment",
+    "commands": [{
+      "id": "f50b5f9b-cf88-4478-82af-d2f67547bd78",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b552bf9-e8a3-42b7-83e5-0af0c63852e6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "546e6200-43d7-4895-a0e2-6d98eddac451",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(16) > span",
+      "targets": [
+        ["css=.btn:nth-child(16) > span", "css:finder"],
+        ["xpath=//label[15]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ababf2f8-fd36-49e0-968e-9b3a627f3c6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ml-auto",
+      "targets": [
+        ["css=.ml-auto", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//app-table-list-daily-fcfs/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Jadwalkan Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2073414b-2ca1-4eda-8781-d5e22bc132ec",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,214.5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33c8427c-0036-4a19-ba58-053cccdc194b",
+      "comment": "",
+      "command": "click",
+      "target": "id=patient-dob-search",
+      "targets": [
+        ["id=patient-dob-search", "id"],
+        ["name=birth-date", "name"],
+        ["css=#patient-dob-search", "css:finder"],
+        ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75619726-a640-4a1a-985f-0f81e59ac165",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-dob-search",
+      "targets": [
+        ["id=patient-dob-search", "id"],
+        ["name=birth-date", "name"],
+        ["css=#patient-dob-search", "css:finder"],
+        ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": "01-01-1990"
+    }, {
+      "id": "2d3fcf10-00c9-487b-bb5e-7087a7170f2c",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-name-search",
+      "targets": [
+        ["id=patient-name-search", "id"],
+        ["name=patient-name-search", "name"],
+        ["css=#patient-name-search", "css:finder"],
+        ["xpath=//input[@id='patient-name-search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "lisa"
+    }, {
+      "id": "a645be71-d6f5-4625-911c-5b7f657f1620",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=patient-name-search",
+      "targets": [
+        ["id=patient-name-search", "id"],
+        ["name=patient-name-search", "name"],
+        ["css=#patient-name-search", "css:finder"],
+        ["xpath=//input[@id='patient-name-search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6f975463-cb14-4f32-9ef6-4158a7c33a24",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-hover:nth-child(3) #radio2",
+      "targets": [
+        ["css=.item-hover:nth-child(3) #radio2", "css:finder"],
+        ["xpath=(//input[@id='radio2'])[3]", "xpath:attributes"],
+        ["xpath=//tr[3]/td/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "282d217c-dcb0-457b-a31a-51f89e2762fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-add-examination",
+      "targets": [
+        ["css=.btn-add-examination", "css:finder"],
+        ["xpath=//div/div/div/div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Tambah Pemeriksaan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fa74945-5992-4250-8d07-5951b8ab3e74",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4:nth-child(14) .ml-2",
+      "targets": [
+        ["css=.col-md-4:nth-child(14) .ml-2", "css:finder"],
+        ["xpath=//div[14]/label/span", "xpath:position"],
+        ["xpath=//span[contains(.,'THYROID USG')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f4e3acd-f3f2-4179-85ba-8c79765d3250",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(6) .col-md-4:nth-child(3) .ml-2",
+      "targets": [
+        ["css=div:nth-child(6) .col-md-4:nth-child(3) .ml-2", "css:finder"],
+        ["xpath=//div[5]/section/div[2]/div[3]/label/span", "xpath:position"],
+        ["xpath=//span[contains(.,'USG 3D ABDOMEN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc8502dc-5951-4704-91e6-56b8242aa292",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success:nth-child(2)",
+      "targets": [
+        ["css=.btn-success:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[10]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Simpan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3182051b-d7fb-4977-b8a7-91a227535d56",
+      "comment": "",
+      "command": "click",
+      "target": "id=bpjsRadio",
+      "targets": [
+        ["id=bpjsRadio", "id"],
+        ["name=bpjsRadio", "name"],
+        ["css=#bpjsRadio", "css:finder"],
+        ["xpath=//input[@id='bpjsRadio']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc925b63-a3db-4e49-be15-d7a9674606f8",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-submit-modality-slot",
+      "targets": [
+        ["id=btn-submit-modality-slot", "id"],
+        ["css=#btn-submit-modality-slot", "css:finder"],
+        ["xpath=//button[@id='btn-submit-modality-slot']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ad8f2da-0668-415e-a1a6-230397a6ade9",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "dd6c04a1-03bc-47a3-aeb3-2bf1c005c1f0",
+    "name": "Get Queue Number",
+    "commands": [{
+      "id": "52f9ff11-fb97-483a-9bcb-eef5e66a3278",
+      "comment": "",
+      "command": "//open",
+      "target": "http://10.85.139.100:5555/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7be52fb3-7ec0-46d3-964c-22c4e928a1de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-menu-list:nth-child(1) > #main-menu-button .header-text-1",
+      "targets": [
+        ["css=.main-menu-list:nth-child(1) > #main-menu-button .header-text-1", "css:finder"],
+        ["xpath=//div[@id='main-menu-button']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d332b5d-5f89-4a45-a9fe-28b36e64f886",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menu-button-0 > .style-word-1",
+      "targets": [
+        ["css=#menu-button-0 > .style-word-1", "css:finder"],
+        ["xpath=//div[@id='menu-button-0']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95a36e23-535c-421d-830d-d47b20f7f11f",
+      "comment": "",
+      "command": "storeText",
+      "target": "id=queue-number",
+      "targets": [],
+      "value": "queueNumber"
+    }, {
+      "id": "c67c9fc1-38bf-423a-9cdd-34de5e844d86",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumber}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79cc144c-77dc-4520-8b0f-13318ac4ff84",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "898969dc-e87e-4e35-949e-01f46add12da",
+    "name": "Create Admission",
+    "commands": [{
+      "id": "6d3a33b1-3e05-4577-80e6-8113824a023e",
+      "comment": "",
+      "command": "//open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule?section=2f3c56f5-f50d-42c2-9fa1-3b6c318230ab&view=0&value=2023-03-29",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8d9d04a-09e9-4dda-bcc5-194a3b6edc69",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af9bb182-fdd0-44f1-8a29-fb55f3bfc700",
+      "comment": "",
+      "command": "click",
+      "target": "css=.font-weight-bold > .ml-2",
+      "targets": [
+        ["css=.font-weight-bold > .ml-2", "css:finder"],
+        ["xpath=//div[2]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Hari Ini')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcd36ba8-f87b-4c0e-9981-2e16dc068a70",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cursor-pointer:nth-child(1) u",
+      "targets": [
+        ["css=.cursor-pointer:nth-child(1) u", "css:finder"],
+        ["xpath=//u", "xpath:position"],
+        ["xpath=//u[contains(.,'Rincian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e05e75e-770d-4f38-83f9-9d94cceed363",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@id='btn-create-admission'])[2]",
+      "targets": [
+        ["xpath=(//button[@id='btn-create-admission'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='modal-detail-schedule']/div[2]/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Admission Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5af58884-9221-415c-b320-ca92c5654bdd",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-create-admission",
+      "targets": [
+        ["id=btn-create-admission", "id"],
+        ["css=#btn-create-admission", "css:finder"],
+        ["xpath=//button[@id='btn-create-admission']", "xpath:attributes"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buat Admission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24913db2-c44a-49ec-8ba4-625c142cdeeb",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c596ad7-3320-43e9-a3fb-8a363d63555f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-content > .modal-content .back-button",
+      "targets": [
+        ["css=.modal-content > .modal-content .back-button", "css:finder"],
+        ["xpath=//div/div/div/div/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20817732-15a3-4f44-99f2-58217c5d4fae",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7c047fb9-9c27-4dc7-a27b-e30d2903d741",
+    "name": "Check-In Appointment",
+    "commands": [{
+      "id": "7bbee210-c415-4f08-8ce4-340983d116c1",
+      "comment": "",
+      "command": "//open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule?section=2f3c56f5-f50d-42c2-9fa1-3b6c318230ab&view=0&value=2023-03-29",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e00414c8-448a-4374-8bbb-73210827f724",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da60ee31-d6a8-4079-a9d6-b839352df6f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.font-weight-bold > .ml-2",
+      "targets": [
+        ["css=.font-weight-bold > .ml-2", "css:finder"],
+        ["xpath=//div[2]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Hari Ini')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "63becaad-03c3-41ae-bb1b-0d9cc53bbc69",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cursor-pointer:nth-child(1) u",
+      "targets": [
+        ["css=.cursor-pointer:nth-child(2) u", "css:finder"],
+        ["xpath=//tr[2]/td[12]/button/u", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a88fb8c4-133b-4483-91d7-f43f4847323f",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-create-check-in",
+      "targets": [
+        ["id=btn-create-check-in", "id"],
+        ["css=#btn-create-check-in", "css:finder"],
+        ["xpath=//button[@id='btn-create-check-in']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-detail-schedule']/div[2]/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Check In Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f4d8cbd-13a8-4f7f-b513-946f08be8eaa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Lanjutkan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95636aa9-0ad0-4a45-ad1c-4a65eecd1b09",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=input-number",
+      "targets": [],
+      "value": "${queueNumber}"
+    }, {
+      "id": "1b9732e6-126f-4538-b95f-8b87acc0181b",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-check-in",
+      "targets": [
+        ["id=btn-check-in", "id"],
+        ["css=#btn-check-in", "css:finder"],
+        ["xpath=//button[@id='btn-check-in']", "xpath:attributes"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Check-in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c1731d6-2c5f-4777-be18-f481825d706f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div.modal-body > div.visit-id-container.pt-2.mb-5.text-center > h4",
+      "targets": [
+        ["css=.modal_queue_number", "css:finder"],
+        ["xpath=//ngb-modal-window", "xpath:position"]
+      ],
+      "value": "${queueNumber}"
+    }, {
+      "id": "bb1f35fe-6635-4b0a-9046-5f8be03daf49",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a2675dd9-16bb-41d4-a93f-aa7d19cba675",
+    "name": "Antrian Modality",
+    "commands": [{
+      "id": "59d6bd44-c961-4125-812b-c91d3cf43eb4",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "befbf05a-895f-473d-8d87-0199707c378a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2bc724b-269d-4451-a13e-5423f909d297",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52c9222e-f48b-49db-9225-f051c6284c28",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "89636a09-e697-4aef-822a-62cdf30eeac6",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "38341dce-38bb-4eda-8085-30ffbc6109b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0561979e-376d-4701-9414-3056be6223d6",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66761e29-2e89-4b4d-929f-dd05deed3940",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "234b239e-096f-4aab-b5e9-6ce32ad4632d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "45e32970-688b-451c-a578-9054814d49cd",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ba37f2c0-2a82-464e-89f0-1e51e7bc9528",
+    "name": "Antrian Modality Monitor",
+    "commands": [{
+      "id": "ac246637-cb6e-4245-9ab1-3ed9f6d98e37",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue-monitor?source=inet",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a26b628c-a8e4-475a-89b5-51a694011035",
+      "comment": "",
+      "command": "//executeAsyncScript",
+      "target": "css=.animate__animated.animate__fadeIn.animate__infinite.animate__slow.text-center > .qtext-h1.text-white",
+      "targets": [],
+      "value": "1000"
+    }, {
+      "id": "f8d996eb-265e-4344-9cfd-5ff04b07bf35",
+      "comment": "",
+      "command": "//storeText",
+      "target": "css=.animate__animated.animate__fadeIn.animate__infinite.animate__slow.text-center > .qtext-h1.text-white",
+      "targets": [],
+      "value": "queueNumberActiveCalling"
+    }, {
+      "id": "8f0a7608-2033-414d-81a4-edde808a5922",
+      "comment": "",
+      "command": "//echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2cede4e8-45e5-4f08-ab66-444e39cdc368",
+    "name": "TSTRAD-QUEUE-001",
+    "commands": [{
+      "id": "2f5ebe76-52b0-47bc-9fc5-46880599f824",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "672a612e-c5f7-4d9a-82db-3fed52a6e3ec",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d438a6c6-28c6-4c09-bfda-326089d79fee",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28d89944-9d56-44be-b723-2e4e1e707c8a",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "7c2f6b5f-6a00-489a-9b2b-69ac6f9fe43b",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "30d71eda-8aca-437b-b1c7-cdb19b7e235a",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d77c2b27-bc0f-41cc-992a-9e0f0030d2bc",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb860513-02f8-4c4d-8232-d9616a97b7a1",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea003010-59e7-4033-8e62-2e1a0c75c588",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "b7e092f1-d1c8-4522-8fde-929ab7d89fb3",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3bb82504-3d49-4168-a0e3-6ba5f0b74b5a",
+    "name": "TSTRAD-QUEUE-002",
+    "commands": [{
+      "id": "3d88ad77-cd03-4579-ae3b-37d64e49716a",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa46533c-c4f1-4b59-8994-ef58e95d0e7f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b147db3-3a72-4b54-8dad-1cdce656c9d2",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1997d983-d445-4fd7-896c-5afb69b8ffe6",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "47372a5b-256a-4837-9304-6e9b3e420f62",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "e9307f5c-ca1d-4354-bb64-8f87bd0a9c0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "872e36ac-07ae-40f2-96cc-c74970026f29",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7b4dde9-54ae-484b-975d-1d2999e6aff0",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa393e8d-9a72-42de-bc4c-1e84c52c2da5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "ce43dedf-4868-4ad1-9b59-7477ba868360",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5b354a72-b995-4524-bf52-c0b84830002c",
+    "name": "TSTRAD-QUEUE-003",
+    "commands": [{
+      "id": "c5693e46-9446-4cdb-aa77-2964a43b23e7",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee0572c8-6c99-4626-81e8-2138c61f9768",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22ce9b93-98aa-48a8-ae0b-0610596cae23",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3608fb1a-8a4c-4457-92bd-132fb633a9ec",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "ae8fb2ac-8b3f-43bc-bda4-f58d882a1789",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "469f9bc8-ddf7-4579-9b4a-845d3c657a97",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a187f07f-f307-4625-bbaf-87a665fcf903",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "faa08560-a705-4cf4-9087-ef7fc46e9557",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5144f267-336c-43e1-bc87-774abd0f11f9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "bb8595f3-7f82-41e7-bf60-fb835ccf9bca",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "80a1d873-1aea-433a-88f9-2188b6905884",
+    "name": "TSTRAD-QUEUE-004",
+    "commands": [{
+      "id": "be8c5821-4c74-4e32-8845-153de733851f",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93c56524-4883-4abe-9da3-71065cadca0a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a87d117-e417-4a7a-831b-01afca1bf8af",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55836dd7-105e-4646-aad4-8c0ba938f955",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "a9bfec6e-eec1-4565-95b1-e1e38c4d59bb",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "93f94602-90a4-4438-93b4-2d5975aeb503",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "916f8048-4b0c-4d0d-9fc2-faf5fe2d4b4f",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9921038-c6d7-4523-bdd9-ede877c105b2",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fb1467f-47a2-4373-b28b-65bfea5203db",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "2e5df788-941d-4a7b-94d5-5845e48fd2a2",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6ac582f9-4e92-4efd-9220-0452e32b7743",
+    "name": "TSTRAD-QUEUE-005",
+    "commands": [{
+      "id": "8a6b6ad9-cd3f-4f9d-b346-ff46a6fe5399",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87ba2d12-a6ad-45e3-9f22-9e067d56eec1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3693e47-726e-405a-87b0-aea0d7a9326b",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d3c91d7-fd39-4479-92e9-f42c123761d6",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "b22a1416-16ba-447c-b2a1-5f9f3a5479ed",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "4810cb98-5df1-467e-b0eb-a54e35118535",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "171cf6c8-aefa-40b0-9cdc-d29b942af29e",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5708772d-594d-4974-bb2a-ca50206a7594",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3beedf2-801e-4bbb-ae8f-07c5c0428c11",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "aa8319f0-cdad-41f9-9ff4-5faa0a92e1b0",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "269168b0-ab10-4dc7-8ba2-ddda7060ead5",
+    "name": "TSTRAD-QUEUE-006",
+    "commands": [{
+      "id": "a14fffad-331c-4f13-8fcf-d2459cc7ad9d",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41364e23-85dc-412b-b598-ee0a6d88616e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2a9ed16-0311-46a7-9c25-435d38fb50b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcf16d2f-e8e6-4f90-972c-a458e18b04db",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "095ac70f-df50-4388-9c22-4d67fe88f430",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "a56ad104-e186-455e-8ef9-393af069b897",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "822cbf60-9b90-439d-abf4-f8ae018e059a",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec32e2e8-ce8b-44aa-bb0e-eae0ac19550b",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69a3d8bf-9e60-45a9-b920-a58f7657071e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "e2e4ae81-60bf-40dc-a8bf-7113e373d5e4",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d32c63ba-2f2b-4faa-8ff8-11dd0c39ba4c",
+    "name": "TSTRAD-QUEUE-007",
+    "commands": [{
+      "id": "7a70b0ae-1751-45aa-82af-642962d7ea8f",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2dd2fcbd-18c5-4c3e-bd8c-2e1cdbdf457c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9a0563e-6101-4110-a75b-04f55128d374",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "581a5019-f271-478f-83c7-49026fb65771",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "2c97faac-96f8-4394-8f8b-f71c0e6d7d94",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "c51cbbb3-bdfb-4486-bcac-58b8f62b0e9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc0441c4-b5ba-494c-8228-b96b4eca741b",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c039b477-04f3-4c17-9311-59cc4493ff5a",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73fea43e-399c-451d-9cce-96bf5e5015c3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "4ffb01d4-d8f7-446a-bd6b-5a0fb58c0109",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f15b3d00-326d-4124-91a8-0ad4813ba356",
+    "name": "TSTRAD-QUEUE-008",
+    "commands": [{
+      "id": "e638173b-337f-4755-ba37-2dc416aa4504",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75cb4168-038a-465f-b182-affe4dff2796",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9a4ac1c-019d-4450-894d-c5f538a36312",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "deb16e24-5892-43a0-8db5-702b3866dfe1",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "ab25bb63-cb3b-4a28-94c5-e2eb5c77769c",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "6f1c1203-ac56-4db8-a524-feb52608116d",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd20446f-05b2-44c5-9a50-545bf6a15670",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50148e22-ab4d-4c91-a519-506cca0308cc",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da078a5a-ae0e-4aad-b126-e75f5be1e2b0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "eff3e816-6353-4242-b6dc-5fc3e97f10c7",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "414a2623-0a12-44f0-998d-d9970d36f830",
+    "name": "TSTRAD-QUEUE-009",
+    "commands": [{
+      "id": "71a16416-a97e-428e-87bf-5d45fb3d24ba",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bb474b5-75be-4937-9fed-7536eb9e5197",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "506cb945-0fac-4b1d-8422-7c60aa4218f8",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4b986a5-3739-4d8a-a9c6-13ac2891ea1a",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "f5f04a45-a0b1-4de7-abe6-571ce07b51a7",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "e51f02ea-4974-400c-9181-5352699bcd75",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf432ac6-5c69-48a1-92f3-52e1cddde312",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cdf17e3d-5b3b-47c8-877c-6542f1040d5e",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eba98908-8d31-420a-bc27-6f23d71a6eb8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "70b9fef2-a92c-4dc9-b748-c9c2569ebf8d",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "33d112b6-54b8-4e79-b998-8eeef149480c",
+    "name": "TSTRAD-QUEUE-0010",
+    "commands": [{
+      "id": "30a89ae5-8101-4f67-ac76-3971b731e3f5",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bf1fef6-62a3-4da9-ba32-079227d844dd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0869611-2e47-42e8-a06a-62043b252137",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f922c0b9-f71d-46a2-92af-a396071b505b",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "c50cecbc-cd27-4005-80b8-fac3745e48aa",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "0abecb3a-2a97-4d79-b1ce-3634a8fe82a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8b37aa8-ba60-4550-b448-f7573091b1f9",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af744f0c-e882-4167-9af2-1578ce47e633",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6209e3d3-42a0-4a53-ac1c-6f01fcb78aa0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "c4cdb10f-72ea-4384-83c3-11445a097a77",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "686370c6-80fc-4b19-bf62-604bc697835c",
+    "name": "TSTRAD-QUEUE-0011",
+    "commands": [{
+      "id": "11699bee-d315-41c9-ab87-c715ccc5da10",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef23fd23-9283-4a7f-b744-c41a0cfca6e4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eeb70e64-42f1-4ccc-8981-a73098998df1",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89156cd6-cb3e-45fd-9bab-3656f9c8ade2",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "3c15d4b2-3ad5-4e2f-9d8d-a364132205e9",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "26741597-86df-4fad-b2ac-b699d0dad1e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df1eff05-a36b-4604-824c-047804b528d6",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28b74f54-e275-46d6-840e-43ad434cf53b",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e471c43e-fd26-4c48-9786-7f4434616b50",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "ee02c3a3-07b5-4e0d-ad56-241cd6c3d622",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c667704d-953f-4819-bcc6-55e0c57bf351",
+    "name": "TSTRAD-QUEUE-0012",
+    "commands": [{
+      "id": "42231ecc-7914-4dec-bc0a-43691507016b",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c19bb07a-671b-4431-af13-a5cd9b641240",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ba0f1d3-6555-4ff7-bb6c-0e5084967e43",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "031b4cf9-9264-4efd-b5cc-47d610ece8ff",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "696d299f-e024-4b82-b901-dd7720a3d256",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "da5b088e-f472-4966-bdc0-997a3a88c50c",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "392c693a-2e49-4276-a135-2bed4fcf5623",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c377763-2097-478d-aa79-ad112581e0f0",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e06893c-cff2-44a6-84a8-7bc1af203f97",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "c4cfe7eb-439c-4346-a7c8-33f164acd662",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6cf2f8d7-f7f4-4c3b-a405-7da90ac869d4",
+    "name": "TSTRAD-QUEUE-0013",
+    "commands": [{
+      "id": "6eda6f7f-fb38-4f97-ac8d-3b8242c90542",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9686cc2-9009-4148-ad4f-75c69bd36e67",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "419952bc-3cfb-4e76-be99-e2cd439a59c7",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec9ed329-5dde-4925-842d-80568cf083f6",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "664c0acf-6613-4de6-87fb-ed63a6b96c28",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "22fef80b-b9cf-478f-9f4f-52843b42e0e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d77d2128-652b-4596-9196-ec12e8ea7ecb",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2cd57d0a-8188-4133-a84b-770f2fa7fc9b",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd321365-10aa-4c91-9f79-c6d452b415b9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "bbafa9f9-1233-43f5-b93f-f23e463deaff",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "10636e81-d232-4514-ac8a-810ffe450613",
+    "name": "TSTRAD-QUEUE-0014",
+    "commands": [{
+      "id": "33c9fb8a-6d72-4387-b73c-c3b7e88d1c04",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49d7252e-c804-4bcf-b724-500c871c9db7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07d7a705-eb49-4822-89f7-5d62cf67fc45",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7280f32-11f8-4f8c-aa0e-920f7158b857",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "de81e70e-c5a6-4dd7-8dcd-e0b26aa17eea",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "48069030-8e3a-4ea4-8acb-f56dcdbb9051",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8feca4bd-7422-4c2d-b55e-b9be9214bed2",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5d00c35-32f2-4585-bba0-719dc83fc3b6",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a617499-db58-4c1e-947a-bf4afc8960c2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "39329989-f718-484f-af4d-29573b9aaa2e",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ac3e769d-5be0-48c5-adc2-b8486c7d109d",
+    "name": "TSTRAD-QUEUE-0015",
+    "commands": [{
+      "id": "ecbc9c5e-119a-471f-91f0-a825dc19bcf1",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a821fc7-9ad6-4363-b900-3e00d2c23827",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d6e3e0e-deca-4855-bda5-22bce2365a41",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc72fda6-7888-42bf-97f0-a08b7107d4da",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "05fb2dc9-be36-4809-8f44-dd5769f48e46",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "36857349-24c9-4dd6-bcfb-36e86f417d29",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63260067-674c-484f-a0d8-43d2c22ddad8",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb80b990-ff5d-402b-94f6-d95f0ba3e431",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7b9240a-23fa-4417-891a-d81bc6438921",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "a1c9e51a-224b-4f4c-86a2-ff228064a5d8",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "efc1ebf9-a0d5-4167-96e5-9b95451a230d",
+    "name": "TSTRAD-QUEUE-0016",
+    "commands": [{
+      "id": "6af91b3b-1078-4c4f-9f7c-23044c6d5cc2",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75982ac9-7e58-4754-aa83-c724aff05a95",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d30c5bd-7aae-4f8e-9f4e-c4b8fb19edaf",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b861290-804d-4708-81f9-f9fd860fe5f2",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "cd48aafc-5c59-4add-a702-b218ca8d3a16",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "4c136db5-f2d4-4002-9002-75a15cff04e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da00fb7f-9f47-4946-9a63-d2ea4c8ea8a5",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "395ecd88-4072-4a5e-ba6f-19597779a0d2",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19daa847-c59a-4bd8-a2d8-ad91827eb9d6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "9d051f97-1425-4adb-826c-6b86b51c8bb4",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "91515562-c0c5-4719-8bfa-bb8d81dcb68e",
+    "name": "TSTRAD-QUEUE-0017",
+    "commands": [{
+      "id": "53b246fa-629b-4f72-a261-b0593955529d",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c789060-2a63-4dfc-9520-1047d1f455de",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50dfb4ca-3c95-4560-aa9d-72f40d22058d",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78b51a5f-3319-449c-a68c-7bd16663d65d",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "f14d1dfe-8993-409a-934e-3fd126a54251",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "0e978ba1-122c-4590-9d13-c5f0afa9b2fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "636c640e-18b9-4112-b5c7-f4a58196ca7d",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ace01a5b-e517-4c33-a215-c7276bebe2ed",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c59a70be-cf06-4fdd-92fb-1edee23d658f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "402fc3b2-4caa-47e8-9381-bc1c5babae15",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1a27fb94-a926-4e0c-a39e-da3a5ba8d621",
+    "name": "TSTRAD-QUEUE-0018",
+    "commands": [{
+      "id": "d82ae649-4605-47fd-b48b-95fb2bf0be9f",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "574924c1-8f41-4d27-8038-7745a75b4fb1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3773ea60-6310-4f79-a191-3381f82f75a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eaed7c7f-2a78-453f-afaf-e4d9a7763e44",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "ed5b1c51-bf9f-49c6-9999-4ebee0516cec",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "f39ee60b-d4c1-4e3e-b40c-e2cbe33420f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4220c50-7a3a-4003-b11a-de8451930fd3",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93af7c42-9a48-4390-9ff2-36555ac4930b",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "174bed1f-b78f-4708-8c68-cb107a22933d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "faf4d4fd-7883-4f5e-b3d9-d0c66b72ce68",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5b302b5d-a90f-44d6-af78-98e656a0be5a",
+    "name": "TSTRAD-QUEUE-0019",
+    "commands": [{
+      "id": "b2134774-273c-41ec-a9af-00e84aa08947",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d707ea99-9b47-48d3-b913-15b35a69cc16",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1480ae67-169d-4b92-95bb-ea895e2c0421",
+      "comment": "",
+      "command": "click",
+      "target": "id=daftar-antrian",
+      "targets": [
+        ["id=daftar-antrian", "id"],
+        ["linkText=Daftar Antrian", "linkText"],
+        ["css=#daftar-antrian", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar Antrian')]", "xpath:link"],
+        ["xpath=//a[@id='daftar-antrian']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar Antrian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1b67e0f-af08-45fa-9300-34049c4fe42b",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(8)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActive"
+    }, {
+      "id": "8c0ae498-1033-430f-9c0c-6ddc532f36d2",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [
+        ["css=tr:nth-child(1) > .align-middle:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[8]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td[8]", "xpath:position"],
+        ["xpath=//td[contains(.,'BQ013')]", "xpath:innerText"]
+      ],
+      "value": "queueNumberActiveTitle"
+    }, {
+      "id": "3370e8d7-229f-48c9-836f-ce5c97d2909e",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-yellow",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-yellow", "css:finder"],
+        ["xpath=//div[@id='daftar-antrian-panel']/div/section[2]/table/tbody/tr/td[10]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dabf83ac-2a0b-47f2-ba7a-a6576b7c0564",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActive}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5718416-fd28-418a-9bfb-493bea3682a6",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "996b2f50-b457-43b9-bc74-cfa70965eef3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .align-middle:nth-child(9)",
+      "targets": [],
+      "value": "Diproses"
+    }, {
+      "id": "25426553-e392-4108-b9f9-adc055d7f38a",
+      "comment": "",
+      "command": "echo",
+      "target": "${queueNumberActiveCalling}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "793c552a-9403-41f4-821b-06b59b56c59f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["548bc788-04eb-4aa0-a985-117682aa7258", "dd6c04a1-03bc-47a3-aeb3-2bf1c005c1f0", "898969dc-e87e-4e35-949e-01f46add12da", "7c047fb9-9c27-4dc7-a27b-e30d2903d741"]
+  }, {
+    "id": "b70a9df1-e962-4f3c-8f37-bbf26c443998",
+    "name": "Antrian Modality",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a2675dd9-16bb-41d4-a93f-aa7d19cba675", "ba37f2c0-2a82-464e-89f0-1e51e7bc9528"]
+  }, {
+    "id": "48db4e00-56a4-477f-8136-e124969b5ce8",
+    "name": "Antrian Modality TestCase",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2cede4e8-45e5-4f08-ab66-444e39cdc368", "3bb82504-3d49-4168-a0e3-6ba5f0b74b5a", "5b354a72-b995-4524-bf52-c0b84830002c", "80a1d873-1aea-433a-88f9-2188b6905884", "6ac582f9-4e92-4efd-9220-0452e32b7743", "269168b0-ab10-4dc7-8ba2-ddda7060ead5", "d32c63ba-2f2b-4faa-8ff8-11dd0c39ba4c", "f15b3d00-326d-4124-91a8-0ad4813ba356", "414a2623-0a12-44f0-998d-d9970d36f830", "33d112b6-54b8-4e79-b998-8eeef149480c", "686370c6-80fc-4b19-bf62-604bc697835c", "c667704d-953f-4819-bcc6-55e0c57bf351", "6cf2f8d7-f7f4-4c3b-a405-7da90ac869d4", "10636e81-d232-4514-ac8a-810ffe450613", "ac3e769d-5be0-48c5-adc2-b8486c7d109d", "efc1ebf9-a0d5-4167-96e5-9b95451a230d", "91515562-c0c5-4719-8bfa-bb8d81dcb68e", "1a27fb94-a926-4e0c-a39e-da3a5ba8d621", "5b302b5d-a90f-44d6-af78-98e656a0be5a"]
+  }],
+  "urls": ["http://10.85.139.13/staging-msm-fe-radiology/schedule", "http://10.85.139.100:5555/", "http://10.85.139.13/staging-msm-fe-radiology/schedule?section=2f3c56f5-f50d-42c2-9fa1-3b6c318230ab&view=0&value=2023-03-27", "http://10.85.139.13/staging-msm-fe-radiology/queue"],
+  "plugins": []
+}
