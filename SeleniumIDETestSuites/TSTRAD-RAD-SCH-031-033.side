@@ -1,0 +1,270 @@
+{
+  "id": "86dc2145-b675-40a1-8e5f-f713c0a9f236",
+  "version": "2.0",
+  "name": "TSTRAD-RAD-SCH-031-033",
+  "url": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+  "tests": [{
+    "id": "b3c542bf-0599-4f31-bd6a-ddf002d9df25",
+    "name": "Search Birthdate With Alphabeth",
+    "commands": [{
+      "id": "521483f0-c047-414c-8ff1-a63ce90961ea",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04ebdeec-26a1-41b4-b35e-5162534dc744",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30b6142b-e9e1-4737-a504-ba8eb0fbb558",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-light:nth-child(2) > span",
+      "targets": [
+        ["css=.btn-light:nth-child(2) > span", "css:finder"],
+        ["xpath=//label/span", "xpath:position"],
+        ["xpath=//span[contains(.,' BONE DENSITOMERY - Ruangan BMD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a44d24b-253f-46f5-b6d1-a1de686369a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ml-auto",
+      "targets": [
+        ["css=.ml-auto", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//app-table-list-daily-fcfs/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Jadwalkan Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fb36de7-d890-4d6f-bd01-ea46e5528372",
+      "comment": "",
+      "command": "click",
+      "target": "id=patient-dob-search",
+      "targets": [
+        ["id=patient-dob-search", "id"],
+        ["name=birth-date", "name"],
+        ["css=#patient-dob-search", "css:finder"],
+        ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09dc1e5a-c60c-4742-be71-0af005acbed9",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-dob-search",
+      "targets": [],
+      "value": "ABCD"
+    }, {
+      "id": "bbcadd1c-8e7b-48d3-9035-89db0b44fad3",
+      "comment": "",
+      "command": "click",
+      "target": "id=patient-name-search",
+      "targets": [
+        ["id=patient-name-search", "id"],
+        ["name=patient-name-search", "name"],
+        ["css=#patient-name-search", "css:finder"],
+        ["xpath=//input[@id='patient-name-search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c91a3d1-882c-4139-982b-f050f7ea646e",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-name-search",
+      "targets": [
+        ["id=patient-name-search", "id"],
+        ["name=patient-name-search", "name"],
+        ["css=#patient-name-search", "css:finder"],
+        ["xpath=//input[@id='patient-name-search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Fer D Sambo"
+    }, {
+      "id": "ef1b0b23-2c99-48e6-a92d-91f879320a0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-name-button > .fa",
+      "targets": [
+        ["css=.search-name-button > .fa", "css:finder"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "019a14c7-3081-4cf3-b1e6-6231851ce8c8",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "20accf9f-1406-4419-a00a-2bd8818f6b04",
+    "name": "Search MR Local no With Alphabeth",
+    "commands": [{
+      "id": "5c731942-4245-4dcd-8f73-ba8c4847021d",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d529e761-6716-49cd-9e83-4a798d58bc97",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6879b1c-8987-4cae-b5a6-9dff0281ba1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-light:nth-child(2) > span",
+      "targets": [
+        ["css=.btn-light:nth-child(2) > span", "css:finder"],
+        ["xpath=//label/span", "xpath:position"],
+        ["xpath=//span[contains(.,' BONE DENSITOMERY - Ruangan BMD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdafb5e0-6c6d-480a-9641-905194d7aac9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ml-auto",
+      "targets": [
+        ["css=.ml-auto", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//app-table-list-daily-fcfs/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Jadwalkan Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8127374b-b915-471b-bac6-19dab71f5825",
+      "comment": "",
+      "command": "click",
+      "target": "id=patient-localmr-field",
+      "targets": [
+        ["id=patient-localmr-field", "id"],
+        ["name=local-mr-search", "name"],
+        ["css=#patient-localmr-field", "css:finder"],
+        ["xpath=//input[@id='patient-localmr-field']", "xpath:attributes"],
+        ["xpath=//div[3]/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2cde095-c45b-438c-9801-57eb95b758b7",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-localmr-field",
+      "targets": [],
+      "value": "ABCD"
+    }, {
+      "id": "b3055022-7483-4a49-a8ec-3c3c353390a5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "415105f2-f6da-4cf6-be93-533bd084a167",
+      "comment": "",
+      "command": "click",
+      "target": "id=id-number-field",
+      "targets": [
+        ["id=id-number-field", "id"],
+        ["name=id-number", "name"],
+        ["css=#id-number-field", "css:finder"],
+        ["xpath=//input[@id='id-number-field']", "xpath:attributes"],
+        ["xpath=//form/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8ce14b52-272b-4253-b782-99cda3592ce2",
+    "name": "Search ID Num With Alphabeth",
+    "commands": [{
+      "id": "e36ed3ce-f1c6-489d-8fa5-9a8a33e64387",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f387ba9-93cd-4cc2-9347-0fddb3e47959",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fc912a3-efcf-4177-8ed0-574caec7e89d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-light:nth-child(2) > span",
+      "targets": [
+        ["css=.btn-light:nth-child(2) > span", "css:finder"],
+        ["xpath=//label/span", "xpath:position"],
+        ["xpath=//span[contains(.,' BONE DENSITOMERY - Ruangan BMD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c6a7763-0e45-4bbd-aa24-45babb0bfe6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ml-auto",
+      "targets": [
+        ["css=.ml-auto", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//app-table-list-daily-fcfs/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Jadwalkan Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "296a2979-81ec-42a7-8f74-2b29457af667",
+      "comment": "",
+      "command": "click",
+      "target": "id=id-number-field",
+      "targets": [
+        ["id=id-number-field", "id"],
+        ["name=id-number", "name"],
+        ["css=#id-number-field", "css:finder"],
+        ["xpath=//input[@id='id-number-field']", "xpath:attributes"],
+        ["xpath=//form/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "601068e9-5aa8-4833-99dc-c7169fd8e32f",
+      "comment": "",
+      "command": "type",
+      "target": "id=id-number-field",
+      "targets": [],
+      "value": "SBBSRBSS"
+    }, {
+      "id": "a2f5c019-2e2b-4e96-be07-12d7986e0931",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c7106518-324b-48a4-800f-6dd63eb348b4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b3c542bf-0599-4f31-bd6a-ddf002d9df25", "8ce14b52-272b-4253-b782-99cda3592ce2", "20accf9f-1406-4419-a00a-2bd8818f6b04"]
+  }],
+  "urls": ["http://10.85.139.13/staging-msm-fe-radiology/schedule"],
+  "plugins": []
+}

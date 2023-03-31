@@ -1,0 +1,294 @@
+{
+  "id": "3b3d00a8-378b-4ba8-87ad-1b50947dd8c1",
+  "version": "2.0",
+  "name": "TSTRAD-RAD-SCH-026",
+  "url": "http://10.85.139.13",
+  "tests": [{
+    "id": "0d11eebd-d968-4860-8d55-73600a1d31b6",
+    "name": "Create Appointment With 2 Modality",
+    "commands": [{
+      "id": "54b49417-cbaa-4b21-a8fb-f3a752bae32c",
+      "comment": "",
+      "command": "open",
+      "target": "/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2403ad5a-21b2-4680-a2e0-e4858aa38d29",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c24d7eed-9318-468b-81ba-078533de3b52",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(11) > span",
+      "targets": [
+        ["css=.btn:nth-child(11) > span", "css:finder"],
+        ["xpath=//label[10]/span", "xpath:position"],
+        ["xpath=//span[contains(.,' PANORAMIC & DENTAL X-RAY - Ruangan 3')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ecc688b-2c68-4736-862c-491b742e0711",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ml-auto",
+      "targets": [
+        ["css=.ml-auto", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//app-table-list-daily-fcfs/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Jadwalkan Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00e1506d-79ec-4cbd-aa28-76298cc19414",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,172.5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1a053ce-0af8-45f7-9ca8-c668becdbffe",
+      "comment": "",
+      "command": "click",
+      "target": "id=patient-dob-search",
+      "targets": [
+        ["id=patient-dob-search", "id"],
+        ["name=birth-date", "name"],
+        ["css=#patient-dob-search", "css:finder"],
+        ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa56e5b8-780f-4703-9777-5bd28b1baa34",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-dob-search",
+      "targets": [
+        ["id=patient-dob-search", "id"],
+        ["name=birth-date", "name"],
+        ["css=#patient-dob-search", "css:finder"],
+        ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": "10-11-2001"
+    }, {
+      "id": "4bcad906-0c4c-43e6-8d88-d707a2eafac6",
+      "comment": "",
+      "command": "click",
+      "target": "id=patient-name-search",
+      "targets": [
+        ["id=patient-name-search", "id"],
+        ["name=patient-name-search", "name"],
+        ["css=#patient-name-search", "css:finder"],
+        ["xpath=//input[@id='patient-name-search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba6a5c2e-d9ef-4c78-a7f8-62998e5f1d31",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-name-search",
+      "targets": [
+        ["id=patient-name-search", "id"],
+        ["name=patient-name-search", "name"],
+        ["css=#patient-name-search", "css:finder"],
+        ["xpath=//input[@id='patient-name-search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Fer D Sambo"
+    }, {
+      "id": "92e4d3f9-7b32-4b9a-ad66-135b1d6248dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-name-button > .fa",
+      "targets": [
+        ["css=.search-name-button > .fa", "css:finder"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0899ac2-532d-4996-99f5-56a01c98fb30",
+      "comment": "",
+      "command": "click",
+      "target": "id=radio2",
+      "targets": [
+        ["id=radio2", "id"],
+        ["name=optradio", "name"],
+        ["css=#radio2", "css:finder"],
+        ["xpath=//input[@id='radio2']", "xpath:attributes"],
+        ["xpath=//td/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9dd946d-788f-450c-bd34-f1499057b8c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-add-examination",
+      "targets": [
+        ["css=.btn-add-examination", "css:finder"],
+        ["xpath=//div/div/div/div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Tambah Pemeriksaan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1250339-3fe9-4443-a42f-d993ab57154d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4:nth-child(4) input",
+      "targets": [
+        ["css=.col-md-4:nth-child(4) input", "css:finder"],
+        ["xpath=(//input[@value=''])[4]", "xpath:attributes"],
+        ["xpath=//div[4]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "886f23e4-4b26-4f36-88a5-b4d34334f19d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success:nth-child(2)",
+      "targets": [
+        ["css=.btn-success:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[10]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3c81df8-0172-4494-b52e-89cf996ef8a8",
+      "comment": "",
+      "command": "click",
+      "target": "id=bpjsRadio2",
+      "targets": [
+        ["id=bpjsRadio2", "id"],
+        ["css=#bpjsRadio2", "css:finder"],
+        ["xpath=//input[@id='bpjsRadio2']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a55a00d2-4a97-46e8-a899-3aaab94e41ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.added-modality-button",
+      "targets": [
+        ["css=.added-modality-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[7]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Tambah Modality')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb1b2548-ddf0-4589-a78e-bf72cc1170a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.added-modality-to-list",
+      "targets": [
+        ["css=.added-modality-to-list", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[7]/div/div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Simpan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05d45018-1301-4a12-8871-224e0780caa4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.x-form-control .ng-arrow-wrapper",
+      "targets": [
+        ["css=.x-form-control .ng-arrow-wrapper", "css:finder"],
+        ["xpath=//div[7]/div/div/div/div/div[2]/ng-select/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "399c9af9-3954-4525-a22e-2f266e672dcd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#a400509b7542-0 > .ng-option-label",
+      "targets": [
+        ["css=#a400509b7542-0 > .ng-option-label", "css:finder"],
+        ["xpath=//div[@id='a400509b7542-0']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "243b00c7-8568-4112-b41c-5a913f80fbd6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-add-examination",
+      "targets": [
+        ["css=.btn-add-examination", "css:finder"],
+        ["xpath=//div/div/div/div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Tambah Pemeriksaan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4155548f-8b97-48fb-8fb9-01727e918e23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4:nth-child(1) .ml-2",
+      "targets": [
+        ["css=.col-md-4:nth-child(1) .ml-2", "css:finder"],
+        ["xpath=//section/div[2]/div/label/span", "xpath:position"],
+        ["xpath=//span[contains(.,'BMD TOTAL BODY RAD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42051122-51d2-4206-b1f7-067f2467ef19",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success:nth-child(2)",
+      "targets": [
+        ["css=.btn-success:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[10]", "xpath:attributes"],
+        ["xpath=//app-modal-multiple-examination/div/div[3]/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5625ec9-5185-4081-b2e1-54dcdea8b924",
+      "comment": "",
+      "command": "click",
+      "target": "css=.added-modality-to-list",
+      "targets": [
+        ["css=.added-modality-to-list", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[7]/div/div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Simpan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c11c9d43-2483-4547-95b3-a6d6cf8fce2d",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-submit-modality-slot",
+      "targets": [
+        ["id=btn-submit-modality-slot", "id"],
+        ["css=#btn-submit-modality-slot", "css:finder"],
+        ["xpath=//button[@id='btn-submit-modality-slot']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60b23fa3-e172-401f-9f43-efa518e4d96b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d0a58bc4-f2d2-45a5-8f26-f56385243654",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0d11eebd-d968-4860-8d55-73600a1d31b6"]
+  }],
+  "urls": ["http://10.85.139.13/"],
+  "plugins": []
+}
