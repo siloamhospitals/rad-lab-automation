@@ -1,0 +1,77 @@
+{
+  "id": "c8084fff-d3fb-45f1-9e5d-8abcf4a471af",
+  "version": "2.0",
+  "name": "TSTRAD-RAD-SCH-042",
+  "url": "http://10.85.139.13",
+  "tests": [{
+    "id": "a5dbfc5f-3465-494d-9090-f2b619fd6031",
+    "name": "TSTRAD-RAD-SCH-041",
+    "commands": [{
+      "id": "692fefcd-0246-4bd4-93a5-d44646a46977",
+      "comment": "",
+      "command": "open",
+      "target": "/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61265164-8280-4d79-a5a0-682a22ac72ed",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9a629ad-2257-4f1c-b924-951e5fce3326",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-search:nth-child(1)",
+      "targets": [
+        ["css=.fa-search:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb9f727b-e02f-447f-92c5-b1088e2bf30d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mr-3",
+      "targets": [
+        ["css=.mr-3", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e39cfb35-c12b-45e6-99a1-063ed0fd2f33",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mr-3",
+      "targets": [
+        ["css=.mr-3", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pet"
+    }, {
+      "id": "04e224a0-52d1-46fc-96aa-076d97d9a0e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.p-3:nth-child(3)",
+      "targets": [
+        ["css=.p-3:nth-child(3)", "css:finder"],
+        ["xpath=//app-widget-radiology-schedule/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6fee6a00-5599-44b9-b09b-84beb4b56928",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a5dbfc5f-3465-494d-9090-f2b619fd6031"]
+  }],
+  "urls": ["http://10.85.139.13/"],
+  "plugins": []
+}
