@@ -1,0 +1,114 @@
+{
+  "id": "e6abff8f-003f-4e29-b704-ac7af0d5bf3a",
+  "version": "2.0",
+  "name": "Laboratory Test",
+  "url": "http://10.85.139.13",
+  "tests": [{
+    "id": "3d1a00ea-4033-4805-881e-7069aaf2bdca",
+    "name": "TSTLAB-APPOINT-014",
+    "commands": [{
+      "id": "ce7a1c59-f152-44e9-b64a-16e02eedffba",
+      "comment": "",
+      "command": "open",
+      "target": "/staging-msm-fe-radiology/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f464722-0bc0-44ae-8f99-bf8a011caadf",
+      "comment": "",
+      "command": "type",
+      "target": "id=textbox-username",
+      "targets": [
+        ["id=textbox-username", "id"],
+        ["name=username", "name"],
+        ["css=#textbox-username", "css:finder"],
+        ["xpath=//input[@id='textbox-username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "shlv.lab"
+    }, {
+      "id": "dde8fe1d-402b-4499-bb7a-6342659f5d3f",
+      "comment": "",
+      "command": "type",
+      "target": "id=textbox-password",
+      "targets": [
+        ["id=textbox-password", "id"],
+        ["name=password", "name"],
+        ["css=#textbox-password", "css:finder"],
+        ["xpath=//input[@id='textbox-password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Lab@123456"
+    }, {
+      "id": "34255372-66a6-437c-84b4-fb1b74a16777",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-login",
+      "targets": [
+        ["css=.btn-login", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "351ef536-f344-4679-b633-5f4cec5c315d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cursor-pointer:nth-child(4) u",
+      "targets": [
+        ["css=.cursor-pointer:nth-child(4) u", "css:finder"],
+        ["xpath=//tr[4]/td[13]/button/u", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f22d611-982d-4562-bb1b-7828033d2894",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.border-secondary",
+      "targets": [
+        ["css=.border-secondary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='modal-detail-lab-schedule']/div[2]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Cetak ')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "4b032ff9-74b2-4602-a861-cdc9e0d17c53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border-secondary",
+      "targets": [
+        ["css=.border-secondary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='modal-detail-lab-schedule']/div[2]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Cetak ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aaa3d133-881d-4bed-a703-8b2deb3028d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(2)",
+      "targets": [
+        ["css=.dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='modal-detail-lab-schedule']/div[2]/div[2]/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Cetak Tiket')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ef9d2d0d-a327-4217-978f-10ca3e4ec24b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3d1a00ea-4033-4805-881e-7069aaf2bdca"]
+  }],
+  "urls": ["http://10.85.139.13/staging-msm-fe-radiology/login", "http://10.85.139.13/"],
+  "plugins": []
+}
