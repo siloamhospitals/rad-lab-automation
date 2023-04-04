@@ -1,0 +1,795 @@
+{
+  "id": "fdcbcebb-4032-47d3-ad30-076aeb54f016",
+  "version": "2.0",
+  "name": "Preregist Laboraroty",
+  "url": "https://preview.siloamhospitals.com/dev-website/p/radiology-ttZ81HI7yCZ0stkG",
+  "tests": [{
+    "id": "5108324f-d270-4106-9d2b-7676d1650324",
+    "name": "TSTLAB-PTC-016",
+    "commands": [{
+      "id": "8de80131-a1f6-4c9a-a68f-403edc78f5ce",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85197e70-822e-4fd0-a7ba-b955595a9d8d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1295x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "555e8184-ffbf-43aa-ada7-b5d7d8963421",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active .fo_minimized_text",
+      "targets": [
+        ["css=.active .fo_minimized_text", "css:finder"],
+        ["xpath=//div[5]/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70a7e1ab-5594-4ca8-96e5-14494f86a9c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-light:nth-child(2) > span",
+      "targets": [
+        ["css=.btn-light:nth-child(2) > span", "css:finder"],
+        ["xpath=//label/span", "xpath:position"],
+        ["xpath=//span[contains(.,' BONE DENSITOMERY - Ruangan BMD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b23fe421-0402-4e04-8c57-bf084f107265",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ml-auto",
+      "targets": [
+        ["css=.ml-auto", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//app-table-list-daily-fcfs/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Jadwalkan Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d727f3a0-0c5a-402f-9eb7-aea8df0b5c4b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,238.56666564941406)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98eeecbb-ab47-4cce-86f7-a59c000c4c26",
+      "comment": "",
+      "command": "click",
+      "target": "id=patient-dob-search",
+      "targets": [
+        ["id=patient-dob-search", "id"],
+        ["name=birth-date", "name"],
+        ["css=#patient-dob-search", "css:finder"],
+        ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13ffa7fc-80e1-45fa-ae83-4c58d5302c59",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-dob-search",
+      "targets": [
+        ["id=patient-dob-search", "id"],
+        ["name=birth-date", "name"],
+        ["css=#patient-dob-search", "css:finder"],
+        ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": "11-06-1995"
+    }, {
+      "id": "a09c71ac-afa4-42ca-b743-bb8a61988316",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-name-search",
+      "targets": [
+        ["id=patient-name-search", "id"],
+        ["name=patient-name-search", "name"],
+        ["css=#patient-name-search", "css:finder"],
+        ["xpath=//input[@id='patient-name-search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Derian Preregist Rad Sample FCFS"
+    }, {
+      "id": "fea2b494-cdc1-4d09-b914-bb1d200d69ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-name-button > .fa",
+      "targets": [
+        ["css=.search-name-button > .fa", "css:finder"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc576171-0887-4954-9bca-748b4099a985",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(3)",
+      "targets": [
+        ["css=.btn-primary:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[5]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Jadwalkan Pasien Baru')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a35de403-5d9f-46d2-bf96-bbdcbe13e297",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pr-3 > .ml-1",
+      "targets": [
+        ["css=.pr-3 > .ml-1", "css:finder"],
+        ["xpath=//div[4]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Pria')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e216de8-8ecc-4ee0-bc27-3faa53908cbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(2)",
+      "targets": [
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@type='text'])[8]", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "154725e4-63b1-429b-b8cf-0e7e43a7a3e2",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(2)",
+      "targets": [
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@type='text'])[8]", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "3671060906950008"
+    }, {
+      "id": "d5bf2490-b7a0-42bd-a6a8-9240a7a45469",
+      "comment": "",
+      "command": "click",
+      "target": "id=telephone-number-field",
+      "targets": [
+        ["id=telephone-number-field", "id"],
+        ["name=telephone-number", "name"],
+        ["css=#telephone-number-field", "css:finder"],
+        ["xpath=//input[@id='telephone-number-field']", "xpath:attributes"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfe7d425-6218-484a-ba24-43b88dffadc5",
+      "comment": "",
+      "command": "type",
+      "target": "id=telephone-number-field",
+      "targets": [
+        ["id=telephone-number-field", "id"],
+        ["name=telephone-number", "name"],
+        ["css=#telephone-number-field", "css:finder"],
+        ["xpath=//input[@id='telephone-number-field']", "xpath:attributes"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "089601232207"
+    }, {
+      "id": "bd158b5b-0d3c-4970-857b-534866bf5e7b",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-email-field",
+      "targets": [
+        ["id=patient-email-field", "id"],
+        ["name=patient-email", "name"],
+        ["css=#patient-email-field", "css:finder"],
+        ["xpath=//input[@id='patient-email-field']", "xpath:attributes"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": "xxderianxx@gmail.com"
+    }, {
+      "id": "72b3129d-2de6-43d0-973b-44e18ec51e93",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-add-examination",
+      "targets": [
+        ["css=.btn-add-examination", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Tambah Pemeriksaan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a3b2230-e85b-43c5-9b29-6b090ce993ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4:nth-child(1) > .d-flex",
+      "targets": [
+        ["css=.col-md-4:nth-child(1) > .d-flex", "css:finder"],
+        ["xpath=//section/div[2]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'BMD TOTAL BODY RAD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdca9cef-afa5-41f8-b968-97458563f377",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success:nth-child(2)",
+      "targets": [
+        ["css=.btn-success:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[6]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Simpan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52d6c210-92aa-458d-b19b-5b914ecca805",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-submit-modality-slot",
+      "targets": [
+        ["id=btn-submit-modality-slot", "id"],
+        ["css=#btn-submit-modality-slot", "css:finder"],
+        ["xpath=//button[@id='btn-submit-modality-slot']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "250bfac1-43f7-41ef-ac46-bb5cc35fbb7a",
+      "comment": "",
+      "command": "click",
+      "target": "id=bpjsRadio2",
+      "targets": [
+        ["id=bpjsRadio2", "id"],
+        ["css=#bpjsRadio2", "css:finder"],
+        ["xpath=//input[@id='bpjsRadio2']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "caa97420-236b-4450-b4fb-0824ff7ea4b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-submit-modality-slot",
+      "targets": [
+        ["id=btn-submit-modality-slot", "id"],
+        ["css=#btn-submit-modality-slot", "css:finder"],
+        ["xpath=//button[@id='btn-submit-modality-slot']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27c8e5c6-8cdd-4ef7-b078-5a75be44b727",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex-row > .btn",
+      "targets": [
+        ["css=.flex-row > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[5]", "xpath:attributes"],
+        ["xpath=//app-modal-nik-validation/div/div[3]/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Tetap Jadwalkan Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7ec4e15-bca3-4bec-a449-d1472a25db88",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[199]", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Lanjutkan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db4183e6-687e-448c-927a-98af54254344",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,237.8333282470703)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffbd3aee-8b41-4495-8d63-d4fa9ff53079",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cursor-pointer:nth-child(1) > td:nth-child(5)",
+      "targets": [
+        ["css=.cursor-pointer:nth-child(1) > td:nth-child(5)", "css:finder"],
+        ["xpath=//app-table-list-daily-fcfs/table/tbody/tr/td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'BONE DENSITOMERY')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45d5cb37-5074-4a3b-820c-82098207eb25",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@id='btn-create-admission'])[2]",
+      "targets": [
+        ["xpath=(//button[@id='btn-create-admission'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='modal-detail-schedule']/div[2]/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Admission Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9188030c-c48e-4aa0-89f7-5a3122519b66",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "xpath=(//button[@id='btn-create-admission'])[2]",
+      "targets": [
+        ["xpath=(//button[@id='btn-create-admission'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='modal-detail-schedule']/div[2]/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Admission Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c386e27-ddc8-4389-a145-5acf4765d210",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-light",
+      "targets": [
+        ["css=.bg-light", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Kirim Link Registrasi ke Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4a8796e0-52fb-434a-a34d-f6eedcb328ac",
+    "name": "TSTLAB-PTC-014 [Failed]",
+    "commands": [{
+      "id": "3a164588-c9f2-4e20-9eb1-352fd144d6a4",
+      "comment": "",
+      "command": "open",
+      "target": "https://preview.siloamhospitals.com/dev-website/p/radiology-ttZ81HI7yCZ0stkG",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c404190-2c88-46cc-aa7e-943baab5b6cb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e60abfc-b4a1-4880-8b95-78cb2d64f0a7",
+      "comment": "",
+      "command": "click",
+      "target": "name=Tipe Kartu Identitas Pasien",
+      "targets": [
+        ["name=Tipe Kartu Identitas Pasien", "name"],
+        ["css=.r-flex:nth-child(2) .r-hasIcon-right > .r-isExpand", "css:finder"],
+        ["xpath=//input[@name='Tipe Kartu Identitas Pasien']", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div/div/div/div/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23227fdf-e799-4035-863e-960ad92e9bb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.r-showAutoComplete .r-autocomplete-item:nth-child(1)",
+      "targets": [
+        ["css=.r-showAutoComplete .r-autocomplete-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='patient-form']/section/div/div/div/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e24597ce-80b4-4558-8831-7255bd7990ae",
+      "comment": "",
+      "command": "click",
+      "target": "name=No. Kartu Identitas Pasien",
+      "targets": [
+        ["name=No. Kartu Identitas Pasien", "name"],
+        ["css=.r-center-flex:nth-child(4) > .r-fieldSetInput:nth-child(1) > .r-input .r-isExpand", "css:finder"],
+        ["xpath=//input[@name='No. Kartu Identitas Pasien']", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div[2]/div/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bf5aa47-5ab4-4e87-8e8b-22c865d55b4f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.r-center-flex.r-columns.r-isWrap input[name=\"No. Kartu Identitas Pasien\"]",
+      "targets": [
+        ["name=No. Kartu Identitas Pasien", "name"],
+        ["css=.r-center-flex:nth-child(4) > .r-fieldSetInput:nth-child(1) > .r-input .r-isExpand", "css:finder"],
+        ["xpath=//input[@name='No. Kartu Identitas Pasien']", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div[2]/div/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/fieldset/div/input", "xpath:position"]
+      ],
+      "value": "3671060906950009"
+    }, {
+      "id": "37d8102a-46cf-4800-b5ef-1ce8c42ec94d",
+      "comment": "",
+      "command": "click",
+      "target": "name=Jenis Kelamin Pasien",
+      "targets": [
+        ["name=Jenis Kelamin Pasien", "name"],
+        ["css=.r-column:nth-child(3) > .r-autocomplete > .r-fieldSetInput .r-isExpand", "css:finder"],
+        ["xpath=//input[@name='Jenis Kelamin Pasien']", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div[2]/div[3]/div/div/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5eceb494-4268-4ebf-bdd4-89f692e874c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.r-showAutoComplete .r-autocomplete-item:nth-child(1)",
+      "targets": [
+        ["css=.r-showAutoComplete .r-autocomplete-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='patient-form']/section/div[2]/div[3]/div/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ee28712-dcfb-48f6-bbbf-10f91c276fa4",
+      "comment": "",
+      "command": "click",
+      "target": "name=Tempat Lahir Pasien",
+      "targets": [
+        ["name=Tempat Lahir Pasien", "name"],
+        ["css=.r-center-flex:nth-child(2) > .r-isExpand-mobile > .r-fieldSetInput > .r-fieldSetInput .r-isExpand", "css:finder"],
+        ["xpath=//input[@name='Tempat Lahir Pasien']", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div[3]/div/div/div/div/div/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7cea837-df70-4e55-b47b-88ef7cfce089",
+      "comment": "",
+      "command": "click",
+      "target": "css=.r-showAutoComplete .r-autocomplete-item:nth-child(2)",
+      "targets": [
+        ["css=.r-showAutoComplete .r-autocomplete-item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='patient-form']/section/div[3]/div/div/div/div/div[2]/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1917396e-f047-40f4-9a18-124492a0c288",
+      "comment": "",
+      "command": "click",
+      "target": "name=Status Pernikahan Pasien",
+      "targets": [
+        ["name=Status Pernikahan Pasien", "name"],
+        ["css=.r-flex:nth-child(6) .r-hasIcon-right > .r-isExpand", "css:finder"],
+        ["xpath=//input[@name='Status Pernikahan Pasien']", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div[4]/div/div/div/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2e897ff-be61-4f46-b56a-6f7be40b4ae2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.r-showAutoComplete .r-autocomplete-item:nth-child(3)",
+      "targets": [
+        ["css=.r-showAutoComplete .r-autocomplete-item:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='patient-form']/section/div[4]/div/div/div[2]/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//section/div[4]/div/div/div[2]/div[2]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7eba0384-e0fc-4cca-8222-f042cb18869e",
+      "comment": "",
+      "command": "click",
+      "target": "name=Alamat Pasien",
+      "targets": [
+        ["name=Alamat Pasien", "name"],
+        ["css=.r-flex > .r-fieldSetInput > .r-input .r-isExpand", "css:finder"],
+        ["xpath=//input[@name='Alamat Pasien']", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div[4]/div[2]/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5907b955-613a-49ab-951f-573a7958dc43",
+      "comment": "",
+      "command": "type",
+      "target": "name=Alamat Pasien",
+      "targets": [
+        ["name=Alamat Pasien", "name"],
+        ["css=.r-flex > .r-fieldSetInput > .r-input .r-isExpand", "css:finder"],
+        ["xpath=//input[@name='Alamat Pasien']", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div[4]/div[2]/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/fieldset/div/input", "xpath:position"]
+      ],
+      "value": "qwerty"
+    }, {
+      "id": "bcffbd95-2ca9-4473-af21-74324013843b",
+      "comment": "",
+      "command": "click",
+      "target": "name=Kabupaten/Kota Pasien",
+      "targets": [
+        ["name=Kabupaten/Kota Pasien", "name"],
+        ["css=.r-center-flex:nth-child(7) > .r-isExpand-mobile:nth-child(1) .r-input .r-isExpand", "css:finder"],
+        ["xpath=//input[@name='Kabupaten/Kota Pasien']", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div[5]/div/div/div/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1263407-ea84-4f50-ae89-ba95bc9903c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.r-showAutoComplete .r-autocomplete-item:nth-child(2)",
+      "targets": [
+        ["css=.r-showAutoComplete .r-autocomplete-item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='patient-form']/section/div[5]/div/div/div[2]/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cda4ab4-df16-40d0-b385-20c4c426caad",
+      "comment": "",
+      "command": "click",
+      "target": "name=Kecamatan Pasien",
+      "targets": [
+        ["name=Kecamatan Pasien", "name"],
+        ["css=.r-center-flex > .r-isExpand-mobile:nth-child(2) > .r-fieldSetInput > .r-fieldSetInput .r-isExpand", "css:finder"],
+        ["xpath=//input[@name='Kecamatan Pasien']", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div[5]/div[2]/div/div/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div/fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b600e2f-77d5-4781-a906-9cf2aca45de7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.r-showAutoComplete .r-autocomplete-item:nth-child(2)",
+      "targets": [
+        ["css=.r-showAutoComplete .r-autocomplete-item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='patient-form']/section/div[5]/div[2]/div/div[2]/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebf9eae0-7cf9-4f9f-bd82-e5042769bb3d",
+      "comment": "",
+      "command": "click",
+      "target": "name=Kelurahan Pasien",
+      "targets": [
+        ["name=Kelurahan Pasien", "name"],
+        ["css=.r-column:nth-child(3) > .r-fieldSetInput > .r-fieldSetInput .r-isExpand", "css:finder"],
+        ["xpath=//input[@name='Kelurahan Pasien']", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div[5]/div[3]/div/div/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[3]/div/div/fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26e42293-56c3-4938-b2e5-4fd54ed9b8c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.r-showAutoComplete .r-autocomplete-item:nth-child(2)",
+      "targets": [
+        ["css=.r-showAutoComplete .r-autocomplete-item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='patient-form']/section/div[5]/div[3]/div/div[2]/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[3]/div/div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7d1f822-aeb8-42ef-9edf-e2729e2c2b32",
+      "comment": "",
+      "command": "click",
+      "target": "name=Agama Pasien",
+      "targets": [
+        ["name=Agama Pasien", "name"],
+        ["css=.r-flex:nth-child(8) .r-autocomplete > .r-fieldSetInput .r-isExpand", "css:finder"],
+        ["xpath=//input[@name='Agama Pasien']", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div[6]/div/div/div/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e203feb-67db-4a6b-8073-1306e23bfe8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.r-showAutoComplete .r-autocomplete-item:nth-child(3)",
+      "targets": [
+        ["css=.r-showAutoComplete .r-autocomplete-item:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='patient-form']/section/div[6]/div/div/div[2]/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div[2]/div[2]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8e256ba-7bc9-4a03-8d88-209d4078d75f",
+      "comment": "",
+      "command": "click",
+      "target": "name=Nama Kerabat Pasien",
+      "targets": [
+        ["name=Nama Kerabat Pasien", "name"],
+        ["css=.r-center-flex:nth-child(12) > .r-fieldSetInput > .r-input .r-isExpand", "css:finder"],
+        ["xpath=//input[@name='Nama Kerabat Pasien']", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div[8]/div/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29a00364-5a20-47aa-b6a1-fddf7b5407e6",
+      "comment": "",
+      "command": "type",
+      "target": "name=Nama Kerabat Pasien",
+      "targets": [
+        ["name=Nama Kerabat Pasien", "name"],
+        ["css=.r-center-flex:nth-child(12) > .r-fieldSetInput > .r-input .r-isExpand", "css:finder"],
+        ["xpath=//input[@name='Nama Kerabat Pasien']", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div[8]/div/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/fieldset/div/input", "xpath:position"]
+      ],
+      "value": "Tono"
+    }, {
+      "id": "7e790bed-a9ff-4c5d-bb4f-5d29494d34c1",
+      "comment": "",
+      "command": "click",
+      "target": "name=Phone Number",
+      "targets": [
+        ["css=.r-fieldSetInput:nth-child(2) .r-flex > .r-isExpand", "css:finder"],
+        ["xpath=(//input[@name='Phone Number'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div[8]/div[2]/div/div/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/div/div/fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d239d905-7861-4809-b50b-8842722df63c",
+      "comment": "",
+      "command": "type",
+      "target": "name=Phone Number",
+      "targets": [
+        ["css=.r-fieldSetInput:nth-child(2) .r-flex > .r-isExpand", "css:finder"],
+        ["xpath=(//input[@name='Phone Number'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div[8]/div[2]/div/div/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/div/div/fieldset/div/input", "xpath:position"]
+      ],
+      "value": "+62 896-0123-2208"
+    }, {
+      "id": "00da9e4d-8888-46c8-bb84-b6ae08075226",
+      "comment": "",
+      "command": "click",
+      "target": "css=.r-warning-filled-btn",
+      "targets": [
+        ["css=.r-warning-filled-btn", "css:finder"],
+        ["xpath=//div[@id='patient-form']/section/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Attach')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee250c49-e8b2-4abf-98a2-a9e9efcfe793",
+      "comment": "",
+      "command": "type",
+      "target": "id=identityImage-0",
+      "targets": [
+        ["id=identityImage-0", "id"],
+        ["css=#identityImage-0", "css:finder"],
+        ["xpath=//input[@id='identityImage-0']", "xpath:attributes"],
+        ["xpath=//div[@id='patient-form']/section/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\bangkit.png"
+    }, {
+      "id": "8a071c13-02e0-48aa-ade2-eea25e562e33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.r-success-filled-btn",
+      "targets": [
+        ["css=.r-success-filled-btn", "css:finder"],
+        ["xpath=//div[@id='patient-form']/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Kirim')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "75a62846-7d5c-41f4-aabb-907aa99ccc57",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.r-success-filled-btn",
+      "targets": [
+        ["css=.r-success-filled-btn", "css:finder"],
+        ["xpath=//div[@id='patient-form']/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Kirim')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d669afe7-6daa-42c7-ad75-5a2960dec402",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.r-success-filled-btn",
+      "targets": [
+        ["css=.r-success-filled-btn", "css:finder"],
+        ["xpath=//div[@id='patient-form']/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Kirim')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b354a2c9-8937-4357-9938-99b930a8fb58",
+      "comment": "",
+      "command": "click",
+      "target": "css=.r-square-20 > .r-isExpand",
+      "targets": [
+        ["css=.r-square-20 > .r-isExpand", "css:finder"],
+        ["xpath=//img[@alt='check_box']", "xpath:img"],
+        ["xpath=//div[@id='modal']/div/div[2]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//main/div/div[2]/div/div[2]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82032caa-821f-4277-b6a4-ba4ba39a89f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=appointment-done-preregist",
+      "targets": [
+        ["id=appointment-done-preregist", "id"],
+        ["css=#appointment-done-preregist", "css:finder"],
+        ["xpath=//button[@id='appointment-done-preregist']", "xpath:attributes"],
+        ["xpath=//div[@id='modal']/div/div[2]/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Konfirmasi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c1052af5-da0e-4aec-aadd-aa6e3c56e2e1",
+    "name": "TSTLAB-PTC-015",
+    "commands": [{
+      "id": "fd1fd8fb-07f9-4879-8802-0da45dd586e8",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "694f9b4f-5a11-4df0-899d-63adf929f790",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bf3e4fb-5eac-416f-832d-7b1eaa2bac7e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//td[7]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rincian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a8924c0-9aac-4989-ad67-dab5ab371d58",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[@id='modal-detail-schedule']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Simpan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "938a78b4-d09e-409e-a1d9-4a86c75afe10",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://10.85.139.13/", "https://preview.siloamhospitals.com/dev-website/p/radiology-4wFTSLvvbokSSDZ8", "https://preview.siloamhospitals.com/dev-website/p/radiology-ttZ81HI7yCZ0stkG", "https://preview.siloamhospitals.com/", "http://10.85.139.13/staging-msm-fe-radiology/preregist"],
+  "plugins": []
+}
