@@ -1,0 +1,174 @@
+{
+  "id": "75121343-7e1f-43db-9b87-511504914ddc",
+  "version": "2.0",
+  "name": "TSTLAB-APPOINT-034",
+  "url": "http://10.85.139.13/staging-msm-fe-radiology/lab-schedule",
+  "tests": [{
+    "id": "8fc0ac23-d9d8-45a1-bbbf-4465a983ea59",
+    "name": "TSTLAB-APPOINT-034",
+    "commands": [{
+      "id": "60a11ee8-d988-44bc-acb7-2b6100d0e2dd",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.13/staging-msm-fe-radiology/lab-schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6398fcc1-a6cf-4d30-a4fc-958cf7dace65",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3d66e60-9ed8-4ccf-8278-778bbd2b6d55",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-3 > .btn",
+      "targets": [
+        ["css=.px-3 > .btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Jadwalkan Pasien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "689493b0-1a34-4ffd-9be5-f73b9a4bfd06",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.search-idNumber-button",
+      "targets": [
+        ["css=.search-idNumber-button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[7]", "xpath:attributes"],
+        ["xpath=//form/div/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2baf68e5-b085-4d19-a52f-8b4e0f8243d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=patient-dob-search",
+      "targets": [
+        ["id=patient-dob-search", "id"],
+        ["name=birth-date", "name"],
+        ["css=#patient-dob-search", "css:finder"],
+        ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a81cceb2-e07e-42ea-ac18-2e2f1f810d8d",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-dob-search",
+      "targets": [
+        ["id=patient-dob-search", "id"],
+        ["name=birth-date", "name"],
+        ["css=#patient-dob-search", "css:finder"],
+        ["xpath=//input[@id='patient-dob-search']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": "10-06-1995"
+    }, {
+      "id": "bb2e3baf-f7ec-410c-b353-c88115a93a14",
+      "comment": "",
+      "command": "type",
+      "target": "id=patient-name-search",
+      "targets": [
+        ["id=patient-name-search", "id"],
+        ["name=patient-name-search", "name"],
+        ["css=#patient-name-search", "css:finder"],
+        ["xpath=//input[@id='patient-name-search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Derian"
+    }, {
+      "id": "99d2dc1a-07d4-4040-aa0a-2a1752875b1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-name-button",
+      "targets": [
+        ["css=.search-name-button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[4]", "xpath:attributes"],
+        ["xpath=//form/div/div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1887142-b988-45d9-b87d-a961ecdefd5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-hover > td:nth-child(4)",
+      "targets": [
+        ["css=.item-hover > td:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/table/tbody/tr/td[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6669eff-1685-4cb3-aaad-da2a92ade98a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-add-examination",
+      "targets": [
+        ["css=.btn-add-examination", "css:finder"],
+        ["xpath=//div[4]/div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Tambah Lab Test')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e49c1a1-c07a-4b47-aa81-5bc2125dd65f",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > .pt-3 .col-md-4:nth-child(1) .ml-2",
+      "targets": [
+        ["css=div:nth-child(2) > .pt-3 .col-md-4:nth-child(1) .ml-2", "css:finder"],
+        ["xpath=//section/div[2]/div/label/span", "xpath:position"],
+        ["xpath=//span[contains(.,'FULL BLOOD COUNT (CBC + DIFF + LED)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cca24ba2-17d4-4270-bcef-22bfdf9ff098",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success:nth-child(2)",
+      "targets": [
+        ["css=.btn-success:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[10]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Simpan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41eb5c2a-88db-43be-9d69-fd7020020ff4",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-submit-modality-slot",
+      "targets": [
+        ["id=btn-submit-modality-slot", "id"],
+        ["css=#btn-submit-modality-slot", "css:finder"],
+        ["xpath=//button[@id='btn-submit-modality-slot']", "xpath:attributes"],
+        ["xpath=//div[2]/div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5f69f93-0d96-4491-b48d-f7297f92b67c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active .fo_minimized_text",
+      "targets": [
+        ["css=.active .fo_minimized_text", "css:finder"],
+        ["xpath=//div[5]/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3b47466c-8577-4a9e-9b9a-7d481d951ceb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8fc0ac23-d9d8-45a1-bbbf-4465a983ea59"]
+  }],
+  "urls": [],
+  "plugins": []
+}
