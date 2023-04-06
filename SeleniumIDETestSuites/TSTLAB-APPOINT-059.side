@@ -1,0 +1,100 @@
+{
+  "id": "f66f5653-4011-460c-a7ac-c8fbe6e41f75",
+  "version": "2.0",
+  "name": "TSTLAB-APPOINT-059",
+  "url": "http://localhost:4200/",
+  "tests": [{
+    "id": "b88251cd-2a15-44f0-b085-72135c740ed3",
+    "name": "Download Report",
+    "commands": [{
+      "id": "0a0d29ae-4ab1-4840-b703-284db3e0d50a",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75b6d572-152a-488a-9adc-5c16ae3b6521",
+      "comment": "",
+      "command": "type",
+      "target": "id=textbox-username",
+      "targets": [
+        ["id=textbox-username", "id"],
+        ["name=username", "name"],
+        ["css=#textbox-username", "css:finder"],
+        ["xpath=//input[@id='textbox-username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "shlv.lab"
+    }, {
+      "id": "7dbacf57-bc24-41a1-9da9-e95f7854177d",
+      "comment": "",
+      "command": "type",
+      "target": "id=textbox-password",
+      "targets": [
+        ["id=textbox-password", "id"],
+        ["name=password", "name"],
+        ["css=#textbox-password", "css:finder"],
+        ["xpath=//input[@id='textbox-password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Lab@123456"
+    }, {
+      "id": "c060e116-fec3-4515-a9c3-603eacb408b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-login",
+      "targets": [
+        ["css=.btn-login", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de24bdd7-cb15-43ee-b5ea-c48e7c090375",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-dropdown",
+      "targets": [
+        ["id=menu-dropdown", "id"],
+        ["css=#menu-dropdown", "css:finder"],
+        ["xpath=//button[@id='menu-dropdown']", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13f53039-c37b-4b5d-9579-acf0955b3258",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item > .ml-2",
+      "targets": [
+        ["css=.dropdown-item > .ml-2", "css:finder"],
+        ["xpath=//div[3]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Download Report')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "354bb7d2-89b7-4d02-8d4d-264d86702172",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer .ml-2",
+      "targets": [
+        ["css=.modal-footer .ml-2", "css:finder"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Unduh Laporan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c6cf9e48-0a89-4e0d-a329-89ee81ba81f6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b88251cd-2a15-44f0-b085-72135c740ed3"]
+  }],
+  "urls": ["http://localhost:4200/"],
+  "plugins": []
+}
