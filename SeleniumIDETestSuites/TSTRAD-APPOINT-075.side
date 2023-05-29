@@ -1,0 +1,547 @@
+{
+  "id": "b5e2ef16-9d42-46b7-a52c-0d3bbf34feae",
+  "version": "2.0",
+  "name": "TSTRAD-APPOINT-075",
+  "url": "https://paymentsystem-uat.siloamhospitals.com/#/login",
+  "tests": [{
+    "id": "81a16263-985e-4ad9-a3ae-ffb7a089a25c",
+    "name": "Cancel Admission",
+    "commands": [{
+      "id": "c3528b50-158c-4800-8659-bf52d0bbc8ed",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.100/staging-msm-fe-radiology/login?returnUrl=%2Fschedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b700422b-d8e5-4f42-a0d6-cd9ec0b0a66d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1060",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28bdd014-4ba7-48b9-8e7b-f42d8d9caed0",
+      "comment": "",
+      "command": "click",
+      "target": "id=textbox-username",
+      "targets": [
+        ["id=textbox-username", "id"],
+        ["name=username", "name"],
+        ["css=#textbox-username", "css:finder"],
+        ["xpath=//input[@id='textbox-username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc302d38-fae4-4803-beee-eb90810583fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=textbox-username",
+      "targets": [
+        ["id=textbox-username", "id"],
+        ["name=username", "name"],
+        ["css=#textbox-username", "css:finder"],
+        ["xpath=//input[@id='textbox-username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "shkj.rad"
+    }, {
+      "id": "31dd07e6-f24e-416f-8339-465aa15d7cf1",
+      "comment": "",
+      "command": "type",
+      "target": "id=textbox-password",
+      "targets": [
+        ["id=textbox-password", "id"],
+        ["name=password", "name"],
+        ["css=#textbox-password", "css:finder"],
+        ["xpath=//input[@id='textbox-password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Rad@123456"
+    }, {
+      "id": "fad0c35e-2694-451f-aeba-3cc5f795ddba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-login",
+      "targets": [
+        ["css=.btn-login", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a7aaf95-2783-4841-893b-eeab0f5ae01f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container-button:nth-child(3) .fo_minimized_text",
+      "targets": [
+        ["css=.container-button:nth-child(3) .fo_minimized_text", "css:finder"],
+        ["xpath=//div[3]/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3106f1f-98a3-41a9-b06c-cd12161c571d",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f252547-f9fa-45f7-9288-f9b9f684af0c",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "30589f51-7bda-4b0c-971d-21a0156f710a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.floor-select",
+      "targets": [
+        ["css=.floor-select", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "label=1"
+    }, {
+      "id": "afd4e5ab-50a1-4ace-9a2a-b24a406cae1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.queue-line-select",
+      "targets": [
+        ["css=.queue-line-select", "css:finder"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": "label=rad"
+    }, {
+      "id": "2d1e35f9-55b6-4fe7-829c-070a66b78cd7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.counter-select",
+      "targets": [
+        ["css=.counter-select", "css:finder"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": "label=Counter 2 - shkj.rad"
+    }, {
+      "id": "313c5ff8-990b-43de-bb0a-c2fe33dffa3f",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "70800e09-5731-4d2a-bea1-fa9dd3016d35",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container-button:nth-child(5) .fo_minimized_text",
+      "targets": [
+        ["css=.container-button:nth-child(5) .fo_minimized_text", "css:finder"],
+        ["xpath=//div[5]/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af9f5121-0a30-412f-ae2e-27c41d2610a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(6)",
+      "targets": [
+        ["css=.btn:nth-child(6)", "css:finder"],
+        ["xpath=//label[5]", "xpath:position"],
+        ["xpath=//label[contains(.,' USG SERVICE - Ruangan 6 USG')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40eab473-707b-4f0d-915c-c5feaeeedd9e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4dfce03f-5b0e-45db-8509-e73c555f4e06",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cursor-pointer > td:nth-child(5)",
+      "targets": [
+        ["css=.cursor-pointer > td:nth-child(5)", "css:finder"],
+        ["xpath=//app-table-list-daily-fcfs/table/tbody/tr/td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'USG - COLOR DOPPLER')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cfae121-351c-45f5-8c68-121246530348",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=btn-cancel-admission",
+      "targets": [
+        ["id=btn-cancel-admission", "id"],
+        ["css=#btn-cancel-admission", "css:finder"],
+        ["xpath=//button[@id='btn-cancel-admission']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-detail-schedule']/div[2]/div[2]/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancel Admission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "908c81d9-1481-4f14-8f61-0edbfcea540b",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-cancel-admission",
+      "targets": [
+        ["id=btn-cancel-admission", "id"],
+        ["css=#btn-cancel-admission", "css:finder"],
+        ["xpath=//button[@id='btn-cancel-admission']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-detail-schedule']/div[2]/div[2]/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancel Admission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55a29662-3cd5-4596-8250-01d939f77835",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=btn-cancel-admission",
+      "targets": [
+        ["id=btn-cancel-admission", "id"],
+        ["css=#btn-cancel-admission", "css:finder"],
+        ["xpath=//button[@id='btn-cancel-admission']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-detail-schedule']/div[2]/div[2]/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancel Admission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "675f1054-6380-4ee7-9ceb-1574767ed40f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Lanjutkan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8dc3a5b-b022-45cf-a268-e955db414088",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-input:nth-child(2)",
+      "targets": [
+        ["css=.ng-input:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/ng-select/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66d4695c-1309-4213-b24f-20e020c31316",
+      "comment": "",
+      "command": "click",
+      "target": "css=.x-form-control .ng-input",
+      "targets": [
+        ["css=.x-form-control .ng-input", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/ng-select/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b122af74-91e5-45b6-aad7-5d9e3bb6aee0",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "10f69b91-c519-4915-b5bf-b45869b99d45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.x-form-control .ng-arrow-wrapper",
+      "targets": [
+        ["css=.x-form-control .ng-arrow-wrapper", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/ng-select/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee17c64b-f3f1-4c1b-a50b-11e6cf2c17c4",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "275ddcc7-1b97-43e9-a31e-e02c935f3dca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-option:nth-child(1)",
+      "targets": [
+        ["css=.x-form-control .ng-arrow-wrapper", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/ng-select/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eecf9968-2800-44c0-bc7e-e6e15f04ec30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-4 .form-control",
+      "targets": [
+        ["css=.mb-4 .form-control", "css:finder"],
+        ["xpath=//div[2]/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7614b09-eb6a-452c-b16f-10c00aae3e84",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-4 .form-control",
+      "targets": [
+        ["css=.mb-4 .form-control", "css:finder"],
+        ["xpath=//div[2]/div/textarea", "xpath:position"]
+      ],
+      "value": "kurang input"
+    }, {
+      "id": "806323db-5290-4406-8345-a1e825fb104f",
+      "comment": "",
+      "command": "click",
+      "target": "id=cancel-appt",
+      "targets": [
+        ["id=cancel-appt", "id"],
+        ["css=#cancel-appt", "css:finder"],
+        ["xpath=//button[@id='cancel-appt']", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Batalkan Admission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df243d37-ec1d-4e84-9f16-90754ed45cd4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f6ec480-857b-4f19-966b-253274192e43",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "289eab1a-c902-4fea-a4b9-07d6745bf6e0",
+    "name": "Check Payment Status",
+    "commands": [{
+      "id": "4b05958a-cb93-4375-9e07-ef0d7ec9707c",
+      "comment": "",
+      "command": "open",
+      "target": "https://paymentsystem-uat.siloamhospitals.com/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4b3e0e6-1810-4c77-b841-c58401ef9cd5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1060",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "afedefd0-400e-46e4-b842-6942a6ec895e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-valid",
+      "targets": [
+        ["css=.ng-valid", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "opd.staff_fo2"
+    }, {
+      "id": "aa47c0d7-ad3d-4189-a8e7-06eb4a55a4c1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Fo2@1234567"
+    }, {
+      "id": "eb941209-2189-41d0-bd51-6ccc9164dfc9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d36aeed-91ef-4f21-b069-985b617e1c6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-select",
+      "targets": [
+        ["css=.form-select", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45513e53-3482-4dd5-906e-3d7158b211aa",
+      "comment": "",
+      "command": "select",
+      "target": "css=.form-select",
+      "targets": [],
+      "value": "label=SILOAM HOSPITALS KEBON JERUK"
+    }, {
+      "id": "ac2885c9-d054-43f4-8379-7023071f1486",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Next')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed831c3d-35a7-4cfe-b45c-d8c7d0626667",
+      "comment": "",
+      "command": "click",
+      "target": "id=0_10_admission",
+      "targets": [
+        ["id=0_10_admission", "id"],
+        ["linkText=Admission", "linkText"],
+        ["css=#\\30_10_admission", "css:finder"],
+        ["xpath=//a[contains(text(),'Admission')]", "xpath:link"],
+        ["xpath=//a[@id='0_10_admission']", "xpath:attributes"],
+        ["xpath=//c-sidebar[@id='sidebar']/perfect-scrollbar/div/div/c-sidebar-nav/c-sidebar-nav-group/a", "xpath:idRelative"],
+        ["xpath=//c-sidebar-nav-group/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Admission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa4cc9e9-4e13-41dc-b51d-75c8b06dfef6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\30_10_2review_transaction > c-sidebar-nav-link-content",
+      "targets": [
+        ["css=#\\30_10_2review_transaction > c-sidebar-nav-link-content", "css:finder"],
+        ["xpath=//a[@id='0_10_2review_transaction']/c-sidebar-nav-link-content", "xpath:idRelative"],
+        ["xpath=//c-sidebar-nav-group/c-sidebar-nav/c-sidebar-nav-link[2]/a/c-sidebar-nav-link-content", "xpath:position"],
+        ["xpath=//c-sidebar-nav-link-content[contains(.,'Review Transaction')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4a6b82d-a37f-4072-9ea5-5b990378ec26",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "55169b11-beb3-4cc1-9f9f-069ea5d03808",
+      "comment": "",
+      "command": "click",
+      "target": "id=outlined-required",
+      "targets": [
+        ["id=outlined-required", "id"],
+        ["css=#outlined-required", "css:finder"],
+        ["xpath=//input[@id='outlined-required']", "xpath:attributes"],
+        ["xpath=//div[@id='iframe-jatis']/div/div/div/div/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e8505ee-d7c2-41a6-ad5f-484f3ab61ea1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-sizeMedium",
+      "targets": [
+        ["css=.MuiButton-sizeMedium", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='iframe-jatis']/div/div/div/div/div[2]/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d41eb485-36b2-41e1-93ec-50752e7b7d34",
+      "comment": "",
+      "command": "type",
+      "target": "id=outlined-required",
+      "targets": [
+        ["id=outlined-required", "id"],
+        ["css=#outlined-required", "css:finder"],
+        ["xpath=//input[@id='outlined-required']", "xpath:attributes"],
+        ["xpath=//div[@id='iframe-jatis']/div/div/div/div/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "RPA2305290016"
+    }, {
+      "id": "5bad77df-402e-42d8-9d1b-606e7c72b2ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-sizeMedium",
+      "targets": [
+        ["css=.MuiButton-sizeMedium", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='iframe-jatis']/div/div/div/div/div[2]/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31186dd6-2e70-4441-967e-39ce3a17800e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiButton-sizeMedium",
+      "targets": [
+        ["css=.MuiButton-sizeMedium", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='iframe-jatis']/div/div/div/div/div[2]/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aec71a81-ba84-40f7-a1f8-97c87a187dc8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-sizeSmall",
+      "targets": [
+        ["css=.MuiButton-sizeSmall", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='iframe-jatis']/div/div[2]/div/div/table/tbody/tr/td[8]/button", "xpath:idRelative"],
+        ["xpath=//td[8]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2c2139c2-71d9-44ca-81bb-ff072d3ac724",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["81a16263-985e-4ad9-a3ae-ffb7a089a25c"]
+  }],
+  "urls": ["http://10.85.139.100/", "http://10.85.139.100/staging-msm-fe-radiology/", "https://paymentsystem-uat.siloamhospitals.com/#/login", "https://his-uatweb.siloamhospitals.com/"],
+  "plugins": []
+}
