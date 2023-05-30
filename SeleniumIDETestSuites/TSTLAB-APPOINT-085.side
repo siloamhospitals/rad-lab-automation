@@ -1,0 +1,243 @@
+{
+  "id": "e09e31d4-e5a4-44ab-adb4-15df04e7be37",
+  "version": "2.0",
+  "name": "TSTLAB-APPOINT-085",
+  "url": "http://10.85.139.100/staging-msm-fe-radiology",
+  "tests": [{
+    "id": "501448bd-29a9-439e-9847-623228da8bee",
+    "name": "Monitor Antrian",
+    "commands": [{
+      "id": "9426bc76-ec59-415f-91a7-2f34dce34d34",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.100/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d08bcf71-d755-4c66-9673-06e667f2bef8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container-button:nth-child(3) .fo_minimized_text",
+      "targets": [
+        ["css=.container-button:nth-child(3) .fo_minimized_text", "css:finder"],
+        ["xpath=//div[3]/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc28c794-0ad9-4d0d-81a2-1ad788102f90",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["css=.d-flex:nth-child(2)", "css:finder"],
+        ["xpath=//app-page-queue-management/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa90a8f7-3b86-4a2e-a48d-88b82d459431",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "20000"
+    }, {
+      "id": "751993f8-d64f-4531-b740-d7dce71faac7",
+      "comment": "",
+      "command": "select",
+      "target": "css=select.floor-select",
+      "targets": [],
+      "value": "label=2"
+    }, {
+      "id": "e7fbd76e-ed34-451a-a376-2552f382fce1",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "504d33bd-c1dd-4653-a24c-d306e62ebab5",
+      "comment": "",
+      "command": "select",
+      "target": "css=select.queue-line-select",
+      "targets": [],
+      "value": "label=RADIOLOGI"
+    }, {
+      "id": "f1855f85-e1b7-41f8-af0b-998205b930b8",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03d2d34c-180e-4e5a-9695-afd1537e6009",
+      "comment": "",
+      "command": "select",
+      "target": "css=select.counter-select",
+      "targets": [],
+      "value": "label=Counter 1 "
+    }]
+  }, {
+    "id": "a4d08fda-d620-45d2-91be-463054c3cd1e",
+    "name": "Update admission",
+    "commands": [{
+      "id": "29339872-8500-425c-9515-f1768e276832",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.100/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "483e2a12-6065-47b1-8067-915b0b58fb02",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.ng-dirty > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "agung"
+    }, {
+      "id": "0155f076-3f74-4e41-8ace-709767ed8ae6",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a22c14ee-f74b-40d5-bf74-e8d9da79cff9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cursor-pointer:nth-child(1) > td:nth-child(2)",
+      "targets": [
+        ["css=.cursor-pointer:nth-child(1) > td:nth-child(2)", "css:finder"],
+        ["xpath=//app-table-list-daily-fcfs/table/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'Derian Rabbani')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbca17f6-821e-44a1-9641-48e25993511e",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66f3af14-6062-40d0-baba-30d665e7c520",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-update-admission",
+      "targets": [
+        ["id=btn-update-admission", "id"],
+        ["css=#btn-update-admission", "css:finder"],
+        ["xpath=//button[@id='btn-update-admission']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-detail-schedule']/div[2]/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Admission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6539fc39-f089-4387-ba73-271e6461fd50",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Lanjutkan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4ddcae4-e0f1-4cdf-9765-f73384a54e78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-select[placeholder=\"Pilih Tipe Pasien\"] input",
+      "targets": [
+        ["css=.ng-select-focused input", "css:finder"],
+        ["xpath=(//input[@type='text'])[8]", "xpath:attributes"],
+        ["xpath=//section[3]/div/div/div/div/ng-select/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7b06eb6-cf5e-447e-8122-9d1b2c4c50ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-option:nth-child(2)",
+      "targets": [
+        ["css=.ng-select-top .ng-input", "css:finder"],
+        ["xpath=//div[@id='div-rujukan']/div/div/ng-select/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//section[2]/div/div/div/div/ng-select/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89b3fb22-cfff-4ab0-bd8a-d56e2a39a057",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-create-admission",
+      "targets": [
+        ["id=btn-create-admission", "id"],
+        ["css=#btn-create-admission", "css:finder"],
+        ["xpath=//button[@id='btn-create-admission']", "xpath:attributes"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buat Admission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e852bcdb-ccd3-4c0a-bb25-4de6d0ed790e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Lanjutkan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "49f7db11-b9c0-4fd5-8b25-ee48b55b78bc",
+    "name": "Login",
+    "commands": [{
+      "id": "8f44a67f-c4d1-4f26-85da-51febcbf3904",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.100/staging-msm-fe-radiology",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af57ba93-8296-4797-ade4-43016514c71d",
+      "comment": "",
+      "command": "type",
+      "target": "id=textbox-username",
+      "targets": [],
+      "value": "shkj.lab"
+    }, {
+      "id": "6b93fc1d-3916-4ea3-8162-87766fe5bc38",
+      "comment": "",
+      "command": "type",
+      "target": "id=textbox-password",
+      "targets": [],
+      "value": "Siloam@12345678"
+    }, {
+      "id": "5e714ddb-dca1-483f-bd01-ee4e866f3f16",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-login",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a02cb76e-c5db-4b09-9fdf-40cc556c5678",
+    "name": "Update Admission \"Tipe Pasien\"",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["49f7db11-b9c0-4fd5-8b25-ee48b55b78bc", "501448bd-29a9-439e-9847-623228da8bee", "a4d08fda-d620-45d2-91be-463054c3cd1e"]
+  }],
+  "urls": ["http://10.85.139.100/staging-msm-fe-radiology"],
+  "plugins": []
+}
