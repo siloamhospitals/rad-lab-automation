@@ -34,7 +34,7 @@
       ],
       "value": ""
     }, {
-      "id": "fa90a8f7-3b86-4a2e-a48d-88b82d459431",
+      "id": "b5239659-b7dc-4093-a8b0-153ccfe99500",
       "comment": "",
       "command": "pause",
       "target": "",
@@ -48,19 +48,33 @@
       "targets": [],
       "value": "label=2"
     }, {
+      "id": "39d73a23-ca11-4aea-9d4c-fb8472193f1e",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "20000"
+    }, {
       "id": "504d33bd-c1dd-4653-a24c-d306e62ebab5",
       "comment": "",
       "command": "select",
       "target": "css=select.queue-line-select",
       "targets": [],
-      "value": "label=Test Radiologi (jgn hapus)"
+      "value": "label=RADIOLOGI"
+    }, {
+      "id": "fa90a8f7-3b86-4a2e-a48d-88b82d459431",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "20000"
     }, {
       "id": "03d2d34c-180e-4e5a-9695-afd1537e6009",
       "comment": "",
       "command": "select",
       "target": "css=select.counter-select",
       "targets": [],
-      "value": "label=Counter 1"
+      "value": "label=Counter 1 - shkj.rad"
     }]
   }, {
     "id": "a4d08fda-d620-45d2-91be-463054c3cd1e",
@@ -83,6 +97,13 @@
         ["xpath=//span[contains(.,' BONE DENSITOMERY - Ruangan BMD')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "07e41ed2-de93-41cb-b2c3-2bc24675e1f5",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [],
+      "value": "agung"
     }, {
       "id": "a22c14ee-f74b-40d5-bf74-e8d9da79cff9",
       "comment": "",
@@ -252,6 +273,38 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "1abcde76-b5b9-4063-a121-983bf5a8e85d",
+    "name": "Login",
+    "commands": [{
+      "id": "1b39df65-d5b6-42f0-b1bb-c007f709e57c",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.100/staging-msm-fe-radiology",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e0ae149-b115-414a-b813-762b93bd522d",
+      "comment": "",
+      "command": "type",
+      "target": "id=textbox-username",
+      "targets": [],
+      "value": "shkj.rad"
+    }, {
+      "id": "2f30c44c-4080-4174-969e-8dcad7655f3d",
+      "comment": "",
+      "command": "type",
+      "target": "id=textbox-password",
+      "targets": [],
+      "value": "Rad@123456"
+    }, {
+      "id": "3268bb19-9421-4958-be3e-8acc7412cf47",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-login",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "a02cb76e-c5db-4b09-9fdf-40cc556c5678",
@@ -259,7 +312,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["501448bd-29a9-439e-9847-623228da8bee", "a4d08fda-d620-45d2-91be-463054c3cd1e"]
+    "tests": ["1abcde76-b5b9-4063-a121-983bf5a8e85d", "501448bd-29a9-439e-9847-623228da8bee", "a4d08fda-d620-45d2-91be-463054c3cd1e"]
   }],
   "urls": ["http://10.85.139.100/staging-msm-fe-radiology"],
   "plugins": []
