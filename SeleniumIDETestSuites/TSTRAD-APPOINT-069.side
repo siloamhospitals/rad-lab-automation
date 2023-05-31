@@ -2,7 +2,7 @@
   "id": "9d4af314-303a-42c8-a119-8c4838c9f2da",
   "version": "2.0",
   "name": "HIS Imp Doctor",
-  "url": "https://his-uatweb.siloamhospitals.com/",
+  "url": "http://10.85.139.100/staging-msm-fe-radiology/patient-queue",
   "tests": [{
     "id": "53a2ab7c-9384-4683-a1ce-5308973a4a6c",
     "name": "TSTRAD-APPOINT-069",
@@ -10,14 +10,14 @@
       "id": "eac3d155-3244-42fe-b757-0c93929776d9",
       "comment": "",
       "command": "open",
-      "target": "http://10.85.139.100/staging-msm-fe-radiology/schedule?view=0&value=2023-05-29&section=f9204b30-81cb-474c-ad45-8217a700c399",
+      "target": "http://10.85.139.100/staging-msm-fe-radiology/schedule?view=0&section=f9204b30-81cb-474c-ad45-8217a700c399",
       "targets": [],
       "value": ""
     }, {
       "id": "d5d5618a-6b79-4aaf-84df-dafe80f8eea2",
       "comment": "",
       "command": "setWindowSize",
-      "target": "800x813",
+      "target": "1200x800",
       "targets": [],
       "value": ""
     }, {
@@ -259,20 +259,328 @@
         ["xpath=//button[contains(.,'Lanjutkan')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "845f8261-f14a-4368-a3d9-9715aeee7ee7",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.col-6:nth-child(2) > .form-label:nth-child(2)",
+      "targets": [
+        ["css=.col-6:nth-child(2) > .form-label:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/section/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "ADMISSION_NO"
+    }, {
+      "id": "a953977b-bcc6-4d1d-b36c-a0d39ef8248c",
+      "comment": "",
+      "command": "echo",
+      "target": "${ADMISSION_NO}",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "b88fdb53-31ef-4fb1-be5d-9a92e5c83c38",
-    "name": "HIS-UAT",
-    "commands": []
+    "name": "HIS-UAT-ADMISSION",
+    "commands": [{
+      "id": "c8c29dbf-771e-4f48-89c0-2d6ffa7cc214",
+      "comment": "",
+      "command": "open",
+      "target": "https://his-uatweb.siloamhospitals.com/admission/list",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d408c77d-a6f0-4140-af91-162105fa55f3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "150d3e29-77ac-4ffc-9f87-81ea7b0089c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=mui-3",
+      "targets": [
+        ["id=mui-3", "id"],
+        ["css=#mui-3", "css:finder"],
+        ["xpath=//input[@id='mui-3']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div[2]/main/div/div/div/form/div/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb9a9f5d-9249-467a-9507-3a66d50e0d39",
+      "comment": "",
+      "command": "type",
+      "target": "id=mui-3",
+      "targets": [
+        ["id=mui-3", "id"],
+        ["css=#mui-3", "css:finder"],
+        ["xpath=//input[@id='mui-3']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div[2]/main/div/div/div/form/div/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "${ADMISSION_NO}"
+    }, {
+      "id": "990c8e4d-1a76-4ab4-b689-5b57ecbe6b30",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiTableRow-hover:nth-child(1) > .MuiTableCell-root:nth-child(5)",
+      "targets": [],
+      "value": "${ADMISSION_NO}"
+    }, {
+      "id": "e1005dd5-09ca-4cee-9e7a-b96cfc990e31",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) .MuiButtonBase-root",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) .MuiButtonBase-root", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div[2]/main/div/div/div/div[3]/table/tbody/tr/td[8]/button", "xpath:idRelative"],
+        ["xpath=//td[8]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00a6afe5-4d46-472e-a256-6591f11358a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTab-root:nth-child(3)",
+      "targets": [
+        ["css=.MuiTab-root:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div[2]/main/div/div/div/div[2]/div/div/div/div[2]/div/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'REVIEW TRANSACTION')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0789db37-d8c0-41a9-88b3-7861feed7123",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-9ojfls",
+      "targets": [
+        ["css=.css-9ojfls", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/main/div/div/div/div[2]/div/div[2]/div/div/div[2]/div/p[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'845.000')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99e75f67-89c4-4f7e-a8f9-d1c25babbb59",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.css-9ojfls",
+      "targets": [
+        ["css=.css-9ojfls", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/main/div/div/div/div[2]/div/div[2]/div/div/div[2]/div/p[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'845.000')]", "xpath:innerText"]
+      ],
+      "value": "TRANSACTION_PRICE"
+    }, {
+      "id": "77805c82-c679-43c9-9ed7-c661eadb1f15",
+      "comment": "",
+      "command": "echo",
+      "target": "${TRANSACTION_PRICE}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9492f16-72f2-4945-ad7e-16c4e09ebcb8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.css-9ojfls",
+      "targets": [
+        ["css=.css-9ojfls", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/main/div/div/div/div[2]/div/div[2]/div/div/div[2]/div/p[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'845.000')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e82ff801-2aab-480f-867b-173c1493aa84",
+    "name": "LOGIN",
+    "commands": [{
+      "id": "6e88d108-1cb8-411b-ac59-b0cb71478e0e",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.100/staging-msm-fe-radiology/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab8a69e1-3f53-41f3-995a-66d036b40a84",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d86c761f-768e-4191-8ca6-8d7e365eebf8",
+      "comment": "",
+      "command": "click",
+      "target": "id=textbox-username",
+      "targets": [
+        ["id=textbox-username", "id"],
+        ["name=username", "name"],
+        ["css=#textbox-username", "css:finder"],
+        ["xpath=//input[@id='textbox-username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1489252e-2ab9-4c19-b5b1-560e012fc4df",
+      "comment": "",
+      "command": "type",
+      "target": "id=textbox-username",
+      "targets": [
+        ["id=textbox-username", "id"],
+        ["name=username", "name"],
+        ["css=#textbox-username", "css:finder"],
+        ["xpath=//input[@id='textbox-username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "shkj.rad"
+    }, {
+      "id": "05baadaa-b5b2-4d56-85cb-3edefcba3d70",
+      "comment": "",
+      "command": "type",
+      "target": "id=textbox-password",
+      "targets": [
+        ["id=textbox-password", "id"],
+        ["name=password", "name"],
+        ["css=#textbox-password", "css:finder"],
+        ["xpath=//input[@id='textbox-password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Rad@123456"
+    }, {
+      "id": "e9021da5-2259-4434-954e-2a3d9ddaa357",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-login",
+      "targets": [
+        ["css=.btn-login", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9fb3df47-7f2e-4050-8e12-77754088bdda",
+    "name": "ANTRIAN-REGISTRASI",
+    "commands": [{
+      "id": "f4ef7e17-040e-4f0d-ab39-d097c66e4f8a",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.100/staging-msm-fe-radiology/patient-queue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e674030-4b1e-4658-876d-e872b6f0b5c9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af43d5f8-0f03-4aaf-b9cd-d5c97177e199",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4fc8fd9-10de-4674-a257-bd246d32f3e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.floor-select",
+      "targets": [
+        ["css=.floor-select", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06f3523f-d3f3-460a-85a9-7052b5eb92ed",
+      "comment": "",
+      "command": "select",
+      "target": "css=.floor-select",
+      "targets": [],
+      "value": "label=2"
+    }, {
+      "id": "6fc26c78-3ed5-49eb-8f0d-7476b208a096",
+      "comment": "",
+      "command": "click",
+      "target": "css=.queue-line-select",
+      "targets": [
+        ["css=.queue-line-select", "css:finder"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5a67049-da24-4165-8f6e-1d13d579c27d",
+      "comment": "",
+      "command": "select",
+      "target": "css=.queue-line-select",
+      "targets": [],
+      "value": "label=RADIOLOGI"
+    }, {
+      "id": "ab0ed97d-7b32-4c8d-afa5-c7aa34b5e426",
+      "comment": "",
+      "command": "click",
+      "target": "css=.counter-select",
+      "targets": [
+        ["css=.counter-select", "css:finder"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ef99974-47c9-4d61-b587-11e6c4c31618",
+      "comment": "",
+      "command": "select",
+      "target": "css=.counter-select",
+      "targets": [],
+      "value": "label=Counter 1"
+    }]
+  }, {
+    "id": "75095756-9c33-4b50-a310-a6e73ff8628b",
+    "name": "LOGOUT",
+    "commands": [{
+      "id": "f0cb1e96-e3b6-477e-8628-4c4f3aeeddcf",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.85.139.100/staging-msm-fe-radiology/schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b89e3a7b-9757-44c4-a40c-e42cb8f7737e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fa085d0-54be-46c9-87bd-6668de91a8a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#header_signio div",
+      "targets": [
+        ["css=#header_signio div", "css:finder"],
+        ["xpath=//div[@id='header_signio']/a/div", "xpath:idRelative"],
+        ["xpath=//div[3]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "36053593-c9e8-460b-9742-bb8f970d468a",
     "name": "Default Suite",
-    "persistSession": false,
+    "persistSession": true,
     "parallel": false,
     "timeout": 300,
-    "tests": ["53a2ab7c-9384-4683-a1ce-5308973a4a6c"]
+    "tests": ["e82ff801-2aab-480f-867b-173c1493aa84", "9fb3df47-7f2e-4050-8e12-77754088bdda", "53a2ab7c-9384-4683-a1ce-5308973a4a6c", "b88fdb53-31ef-4fb1-be5d-9a92e5c83c38"]
   }],
-  "urls": ["http://10.85.139.100/", "http://10.85.139.100/staging-msm-fe-radiology/schedule?view=0&value=2023-05-29&section=f9204b30-81cb-474c-ad45-8217a700c399"],
+  "urls": ["http://10.85.139.100/", "http://10.85.139.100/staging-msm-fe-radiology/schedule?view=0&value=2023-05-29&section=f9204b30-81cb-474c-ad45-8217a700c399", "https://his-uatweb.siloamhospitals.com/admission/list", "http://10.85.139.100/staging-msm-fe-radiology/patient-queue"],
   "plugins": []
 }
